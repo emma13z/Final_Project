@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KMarketer</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: url(background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        margin: 0 auto;
+      }
+      body::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-banner">
+      <header class="header">
+        <a href="#KMarketer" class="logo"><img src="KMarketer.svg" /></a>
+        <div class="all-nav">
+          <nav class="nav1">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#product">Product</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <ul class="nav-icons">
+            <li>
+              <a href="#search"><img src="btn.svg" alt="search icon" /></a>
+            </li>
+            <li>
+              <a href="#cart"
+                ><img
+                  src="icn shopping-cart .icn-xs.svg"
+                  alt="shopping-cart icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
+    <div class="container" style="max-width: 1050px">
+      <h1>We Take Care of the Future</h1>
+      <h4>
+        We know how large objects will act, but things on a small scale just do
+        not act that way.
+      </h4>
+      <div>
+        <button type="button" class="btn1">Get Quote Now</button>
+        <button type="button" class="btn2">Learn More</button>
+      </div>
+    </div>
+  </body>
+</html>
