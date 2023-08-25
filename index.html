@@ -10,7 +10,7 @@
     />
     <style>
       body {
-        background-image: url(background.png);
+        background-image: url(cover.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -31,16 +31,15 @@
       .container {
         display: flex;
         max-width: 1050px;
-        width: 860px;
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
         padding: 40px 0px;
         gap: 40px;
       }
-      h1 {
+      .heading1,
+      .heading4 {
         width: 573px;
-        height: 143px;
         color: #ffffff;
         text-align: center;
         font-family: Montserrat;
@@ -50,23 +49,17 @@
         line-height: 80px;
         letter-spacing: 0.2px;
       }
-      h4 {
+      .heading4 {
         width: 539px;
         font-size: 20px;
-        color: #ffffff;
-        text-align: center;
-        font-family: Montserrat;
         font-size: 20px;
-        font-style: normal;
         font-weight: 500;
         line-height: 30px;
-        letter-spacing: 0.2px;
       }
-      .btn1,
-      .btn2 {
+      .button-quote,
+      .button-learn {
         color: #ffffff;
         background-color: #ffa62b;
-        width: 185px;
         padding: 10px 36px;
         border-radius: 37px;
         font-size: 14px;
@@ -75,9 +68,8 @@
         line-height: 28px;
         gap: 10px;
       }
-      .btn2 {
+      .button-learn {
         background-color: transparent;
-        width: 154px;
         border-width: 1px;
         border-color: #ffffff;
       }
@@ -92,7 +84,6 @@
         justify-content: space-between;
         align-items: center;
         gap: 462px;
-        padding: 23px 164px 23px 136px;
       }
       .logo {
         display: flex;
@@ -154,8 +145,8 @@
               <a href="#search"><img src="btn.svg" alt="search icon" /></a>
             </li>
             <li>
-              <a href="#cart"
-                ><img
+              <a href="#cart">
+                <img
                   src="icn shopping-cart .icn-xs.svg"
                   alt="shopping-cart icon"
               /></a>
@@ -165,14 +156,14 @@
       </header>
     </div>
     <div class="container" style="max-width: 1050px">
-      <h1>We Take Care of the Future</h1>
-      <h4>
+      <h1 class="heading1">We Take Care of the Future</h1>
+      <h4 class="heading4">
         We know how large objects will act, but things on a small scale just do
         not act that way.
       </h4>
       <div>
-        <button type="button" class="btn1">Get Quote Now</button>
-        <button type="button" class="btn2">Learn More</button>
+        <button type="button" class="button-quote">Get Quote Now</button>
+        <button type="button" class="button-learn">Learn More</button>
       </div>
     </div>
   </body>
