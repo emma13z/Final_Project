@@ -10,23 +10,12 @@
     />
     <style>
       body {
-        background-image: url(cover.png);
+        background-image: url(images/background.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
         position: relative;
         margin: 0 auto;
-      }
-      body::before {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: -1;
       }
       ul {
         margin: 0;
@@ -44,7 +33,9 @@
         justify-content: space-between;
         align-items: center;
       }
-      .nav-list, .nav1, .nav-icons {
+      .nav-list,
+      .nav1,
+      .nav-icons {
         display: flex;
         gap: 21px;
       }
@@ -115,10 +106,10 @@
       .button-learn {
         background-color: transparent;
       }
-      @media screen and (min-width:320px) {
+      @media screen and (min-width: 320px) {
         body {
           background-position: center;
-      }
+        }
         .header {
           flex-direction: column;
           align-items: center;
@@ -140,7 +131,8 @@
           font-size: 0.6em;
           line-height: 1.5em;
         }
-        .button-learn, .button-quote {
+        .button-learn,
+        .button-quote {
           font-size: 0.5em;
           line-height: 1.5em;
           padding: 10px 10px;
@@ -155,37 +147,43 @@
     <section class="top-banner">
       <div class="container">
         <header class="header">
-          <a href="#KMarketer" class="logo"><img src="KMarketer.svg" /></a>
-            <nav class="nav1">
-              <ul class="nav-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#product">Product</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </nav>
-            <ul class="nav-icons">
-              <li>
-                <a href="#search"><img src="btn.svg" alt="search icon" /></a>
-              </li>
-              <li>
-                <a href="#cart">
-                  <img
-                    src="icn shopping-cart .icn-xs.svg"
-                    alt="shopping-cart icon"
-                /></a>
-              </li>
+          <a href="#KMarketer" class="logo">
+            <img src="images/KMarketer.svg" alt="the brand/logo image" />
+          </a>
+          <nav class="nav1">
+            <ul class="nav-list">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#product">Product</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
+          </nav>
+          <ul class="nav-icons">
+            <li>
+              <a href="#search">
+                <img src="images/btn.svg" alt="search icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#cart">
+                <img
+                  src="images/icn shopping-cart .icn-xs.svg"
+                  alt="shopping-cart icon"
+                />
+              </a>
+            </li>
+          </ul>
         </header>
         <div class="content">
-        <h1 class="heading1">We Take Care of the Future</h1>
-        <h4 class="heading4">
-          We know how large objects will act, but things on a small scale just
-          do not act that way.
-        </h4>
-        <div class="action-buttons">
-          <button type="button" class="button-quote">Get Quote Now</button>
-          <button type="button" class="button-learn">Learn More</button>
+          <h1 class="heading1">We Take Care of the Future</h1>
+          <h4 class="heading4">
+            We know how large objects will act, but things on a small scale just
+            do not act that way.
+          </h4>
+          <div class="action-buttons">
+            <button type="button" class="button-quote">Get Quote Now</button>
+            <button type="button" class="button-learn">Learn More</button>
+          </div>
         </div>
       </div>
     </section>
