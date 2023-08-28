@@ -28,94 +28,33 @@
         background-color: rgba(0, 0, 0, 0.5);
         z-index: -1;
       }
-      .container {
-        display: flex;
-        max-width: 1050px;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
-        padding: 40px 0px;
-        gap: 40px;
-      }
-      .heading1,
-      .heading4 {
-        width: 573px;
-        color: #ffffff;
-        text-align: center;
-        font-family: Montserrat;
-        font-size: 58px;
-        font-style: normal;
-        font-weight: 800;
-        line-height: 80px;
-        letter-spacing: 0.2px;
-      }
-      .heading4 {
-        width: 539px;
-        font-size: 20px;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 30px;
-      }
-      .button-quote,
-      .button-learn {
-        color: #ffffff;
-        background-color: #ffa62b;
-        padding: 10px 36px;
-        border-radius: 37px;
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 0.2px;
-        line-height: 28px;
-        gap: 10px;
-      }
-      .button-quote {
-        border: none;
-      }
-      .button-learn {
-        background-color: transparent;
-        border-width: 1px;
-        border-color: #ffffff;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
       }
       .top-banner {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+        padding: 40px 0 120px;
       }
       .header {
+        width: 100%;
         display: flex;
         max-width: 1050px;
+        margin-bottom: 160px;
         justify-content: space-between;
         align-items: center;
-        gap: 462px;
       }
-      .logo {
+      .nav-list, .nav1, .nav-icons {
         display: flex;
-        align-items: center;
+        gap: 21px;
       }
       .nav1 {
-        display: flex;
+        margin-left: auto;
         align-items: center;
-        flex-direction: row;
-        gap: 21px;
       }
       .nav-icons {
-        display: flex;
+        margin-left: 40px;
         align-items: center;
-        gap: 20px;
-        justify-content: flex-end;
-      }
-      .all-nav {
-        display: flex;
-        gap: 39px;
-      }
-      ul {
-        list-style-type: none;
-        display: flex;
-        align-items: center;
-        gap: 21px;
-      }
-      li {
-        display: flex;
       }
       li a {
         color: white;
@@ -128,46 +67,127 @@
         letter-spacing: 0.2px;
         text-align: center;
       }
+      .container {
+        display: flex;
+        max-width: 1020px;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+      .content {
+        max-width: 570px;
+      }
+      .heading1,
+      .heading4 {
+        color: #ffffff;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 58px;
+        font-style: normal;
+        line-height: 80px;
+        letter-spacing: 0.2px;
+      }
+      .heading4 {
+        font-size: 20px;
+        line-height: 30px;
+      }
+      .action-buttons {
+        display: flex;
+        justify-content: center;
+      }
+      .button-quote,
+      .button-learn {
+        color: #ffffff;
+        background-color: #ffa62b;
+        padding: 10px 36px;
+        border-radius: 37px;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        line-height: 28px;
+        gap: 10px;
+        border: 1px solid white;
+        cursor: pointer;
+      }
+      .button-quote {
+        border: none;
+      }
+      .button-learn {
+        background-color: transparent;
+      }
+      @media screen and (min-width:320px) {
+        body {
+          background-position: center;
+      }
+        .header {
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 1em;
+          line-height: 3em;
+        }
+        .nav1 {
+          margin: 0 auto;
+        }
+        .nav-icons {
+          margin-left: 0;
+        }
+        .heading1 {
+          font-size: 1.2em;
+          line-height: 3em;
+          margin-top: 70px;
+        }
+        .heading4 {
+          font-size: 0.6em;
+          line-height: 1.5em;
+        }
+        .button-learn, .button-quote {
+          font-size: 0.5em;
+          line-height: 1.5em;
+          padding: 10px 10px;
+        }
+        .button-learn {
+          margin-left: 8px;
+        }
+      }
     </style>
   </head>
   <body>
-    <div class="top-banner">
-      <header class="header">
-        <a href="#KMarketer" class="logo"><img src="KMarketer.svg" /></a>
-        <div class="all-nav">
-          <nav class="nav1">
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#product">Product</a></li>
-              <li><a href="#pricing">Pricing</a></li>
-              <li><a href="#contact">Contact</a></li>
+    <section class="top-banner">
+      <div class="container">
+        <header class="header">
+          <a href="#KMarketer" class="logo"><img src="KMarketer.svg" /></a>
+            <nav class="nav1">
+              <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+            <ul class="nav-icons">
+              <li>
+                <a href="#search"><img src="btn.svg" alt="search icon" /></a>
+              </li>
+              <li>
+                <a href="#cart">
+                  <img
+                    src="icn shopping-cart .icn-xs.svg"
+                    alt="shopping-cart icon"
+                /></a>
+              </li>
             </ul>
-          </nav>
-          <ul class="nav-icons">
-            <li>
-              <a href="#search"><img src="btn.svg" alt="search icon" /></a>
-            </li>
-            <li>
-              <a href="#cart">
-                <img
-                  src="icn shopping-cart .icn-xs.svg"
-                  alt="shopping-cart icon"
-              /></a>
-            </li>
-          </ul>
+        </header>
+        <div class="content">
+        <h1 class="heading1">We Take Care of the Future</h1>
+        <h4 class="heading4">
+          We know how large objects will act, but things on a small scale just
+          do not act that way.
+        </h4>
+        <div class="action-buttons">
+          <button type="button" class="button-quote">Get Quote Now</button>
+          <button type="button" class="button-learn">Learn More</button>
         </div>
-      </header>
-    </div>
-    <div class="container" style="max-width: 1050px">
-      <h1 class="heading1">We Take Care of the Future</h1>
-      <h4 class="heading4">
-        We know how large objects will act, but things on a small scale just do
-        not act that way.
-      </h4>
-      <div>
-        <button type="button" class="button-quote">Get Quote Now</button>
-        <button type="button" class="button-learn">Learn More</button>
       </div>
-    </div>
+    </section>
   </body>
 </html>
