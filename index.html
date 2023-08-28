@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KMarketer</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: url(cover.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        margin: 0 auto;
+      }
+      body::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+      .container {
+        display: flex;
+        max-width: 1050px;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        padding: 40px 0px;
+        gap: 40px;
+      }
+      .heading1,
+      .heading4 {
+        width: 573px;
+        color: #ffffff;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 58px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 80px;
+        letter-spacing: 0.2px;
+      }
+      .heading4 {
+        width: 539px;
+        font-size: 20px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+      }
+      .button-quote,
+      .button-learn {
+        color: #ffffff;
+        background-color: #ffa62b;
+        padding: 10px 36px;
+        border-radius: 37px;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        line-height: 28px;
+        gap: 10px;
+      }
+      .button-quote {
+        border: none;
+      }
+      .button-learn {
+        background-color: transparent;
+        border-width: 1px;
+        border-color: #ffffff;
+      }
+      .top-banner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .header {
+        display: flex;
+        max-width: 1050px;
+        justify-content: space-between;
+        align-items: center;
+        gap: 462px;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+      .nav1 {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 21px;
+      }
+      .nav-icons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: flex-end;
+      }
+      .all-nav {
+        display: flex;
+        gap: 39px;
+      }
+      ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        gap: 21px;
+      }
+      li {
+        display: flex;
+      }
+      li a {
+        color: white;
+        text-decoration: none;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-banner">
+      <header class="header">
+        <a href="#KMarketer" class="logo"><img src="KMarketer.svg" /></a>
+        <div class="all-nav">
+          <nav class="nav1">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#product">Product</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <ul class="nav-icons">
+            <li>
+              <a href="#search"><img src="btn.svg" alt="search icon" /></a>
+            </li>
+            <li>
+              <a href="#cart">
+                <img
+                  src="icn shopping-cart .icn-xs.svg"
+                  alt="shopping-cart icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
+    <div class="container" style="max-width: 1050px">
+      <h1 class="heading1">We Take Care of the Future</h1>
+      <h4 class="heading4">
+        We know how large objects will act, but things on a small scale just do
+        not act that way.
+      </h4>
+      <div>
+        <button type="button" class="button-quote">Get Quote Now</button>
+        <button type="button" class="button-learn">Learn More</button>
+      </div>
+    </div>
+  </body>
+</html>
