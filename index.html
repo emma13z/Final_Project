@@ -328,8 +328,41 @@
         line-height: 24px;   
         width: 600px;
       }
-      @media screen and (min-width: 360px) and (max-width:768) {
+      .business-service {
+        background: linear-gradient(
+          rgba(37, 43, 66, 1),
+          rgba(22, 105, 122, 1));
       }
+      .video__main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 864px;
+        margin-top: 80px;
+      }
+      .video__title {
+        width: 461px;       
+        font-weight: 700;
+        line-height: 57px;
+        font-size: 40px;
+        text-align: center;
+        margin: 0 auto;
+      }
+      .video__subtitle {
+        width: 470px;       
+        font-weight: 500;
+        line-height: 20px;
+        font-size: 14px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 50px ;
+      }
+      .video {
+        margin-bottom: 80px;
+      }
+  
+
     </style>
   </head>
   <body>
@@ -579,5 +612,19 @@
         </div>
       </section>
     </footer>
+    <section class="business-service">
+      <div class="container">
+        <div class="video__main-content">
+          <h2 class="video__title">We are providing best business service.</h2>
+          <p class="video__subtitle">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+        </div>
+        <div class="video">
+        <video width="877px" height="442px" poster="img-video/video-cover.png" controls>
+          <source src="img-video/CSS in 100 Seconds.mp4" type=video/mp4>
+          Your browser does not support the video tag.
+        </video>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
