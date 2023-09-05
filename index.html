@@ -361,8 +361,72 @@
       .video {
         margin-bottom: 80px;
       }
-  
-
+      .clients {
+        background-color: var(--darkblue);
+      }
+      .clients__main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      .clients__title {    
+        font-weight: 700;
+        line-height: 57px;
+        font-size: 40px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 80px;
+      }
+      .clients__subtitle {
+        width: 470px;       
+        font-weight: 500;
+        line-height: 20px;
+        font-size: 14px;
+        text-align: center;
+        margin: 0 auto;
+      }
+      .card__content {
+        gap: 20px;
+      }
+      .employee-pic {
+        width: 50px;
+        height: 50px;
+        border: 1px;
+        display: flex;
+        float:left;
+        margin-right: 15px;
+      }
+      .employee-name, .employee-occupation {
+        font-weight: 600;
+        line-height: 24px;
+        color: var(--orange);
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        font-size: 14px;
+      }
+      .employee-occupation {
+        color: var(--darkblue);
+      }
+      .employee-review {
+        margin: 20px 0;
+        font-size: 14px;
+        color: #737373;
+        font-weight: 600;
+        line-height: 24px;
+      }
+      .star-rating {
+        width: 22px;
+        height: 22px;
+      }
+      .clients .card {
+        padding: 30px 35px;
+        margin-bottom: 80px;
+        margin-top: 35px;
+        border-radius: 5px;
+        border: 1px;
+      }
     </style>
   </head>
   <body>
@@ -626,5 +690,128 @@
         </div>
       </div>
     </section>
+    <section class="clients">
+      <div class="container">
+        <div class="clients__main-content">
+          <h2 class="clients__title">What Clients Say</h2>
+          <p class="clients__subtitle">Problems trying to resolve the conflict between 
+            the two major realms of Classical physics: Newtonian mechanics </p>
+        </div>
+        <div class="cards-grid">
+          <div class="card">
+            <div class="card__content">
+              <img
+                src="img-clients/yellow-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+              <img
+                src="img-clients/yellow-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+              <img
+                src="img-clients/yellow-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+              <img
+                src="img-clients/yellow-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+              <img
+                src="img-clients/empty-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+              <h6 class="employee-review">Slate helps you see how many more days you need to work to reach your financial goal.</h6>
+              <img
+                src="img-clients/Designer-1.png"
+                class="employee-pic"
+                alt="designer image"
+              />
+              <p class="employee-name">Regina Miles</p>
+              <h6 class="employee-occupation">Designer</h6>
+            </div>
+          </div>
+            <div class="card">
+              <div class="card__content">
+                <img
+                src="img-clients/yellow-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+              <img
+                src="img-clients/yellow-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+              <img
+                src="img-clients/yellow-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+              <img
+                src="img-clients/yellow-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+              <img
+                src="img-clients/empty-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+                <h6 class="employee-review">Slate helps you see how many more days you need to work to reach your financial goal.</h6>
+                <img
+                  src="img-clients/Designer-2.png"
+                  class="employee-pic"
+                  alt="designer image"
+                />
+                <p class="employee-name">Regina Miles</p>
+                <h6 class="employee-occupation">Designer</h6>
+              </div>
+            </div>
+              <div class="card">
+                <div class="card__content">
+                  <img
+                  src="img-clients/yellow-star.svg"
+                  class="star-rating"
+                  alt="star rating image"
+                />
+                <img
+                  src="img-clients/yellow-star.svg"
+                  class="star-rating"
+                  alt="star rating image"
+                />
+                <img
+                  src="img-clients/yellow-star.svg"
+                  class="star-rating"
+                  alt="star rating image"
+                />
+                <img
+                  src="img-clients/yellow-star.svg"
+                  class="star-rating"
+                  alt="star rating image"
+                />
+                <img
+                  src="img-clients/empty-star.svg"
+                  class="star-rating"
+                  alt="star rating image"
+                />
+                  <h6 class="employee-review">Slate helps you see how many more days you need to work to reach your financial goal.</h6>
+                  <img
+                    src="img-clients/Designer-3.png"
+                    class="employee-pic"
+                    alt="designer image"
+                  />
+                  <p class="employee-name">Regina Miles</p>
+                  <h6 class="employee-occupation">Designer</h6>
+                </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    
   </body>
 </html>
