@@ -333,7 +333,7 @@
           rgba(37, 43, 66, 1),
           rgba(22, 105, 122, 1));
       }
-      .video__main-content {
+      .video__main-content, .clients__main-content, .team__main-content {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -341,7 +341,7 @@
         width: 864px;
         margin-top: 80px;
       }
-      .video__title {
+      .video__title, .clients__title, .team__title {
         width: 461px;       
         font-weight: 700;
         line-height: 57px;
@@ -349,7 +349,7 @@
         text-align: center;
         margin: 0 auto;
       }
-      .video__subtitle {
+      .video__subtitle, .clients__subtitle, .team__subtitle {
         width: 470px;       
         font-weight: 500;
         line-height: 20px;
@@ -364,27 +364,8 @@
       .clients {
         background-color: var(--darkblue);
       }
-      .clients__main-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-      }
-      .clients__title {    
-        font-weight: 700;
-        line-height: 57px;
-        font-size: 40px;
-        text-align: center;
-        margin: 0 auto;
-        margin-top: 80px;
-      }
       .clients__subtitle {
-        width: 470px;       
-        font-weight: 500;
-        line-height: 20px;
-        font-size: 14px;
-        text-align: center;
-        margin: 0 auto;
+        margin-bottom: 35px;
       }
       .card__content {
         gap: 20px;
@@ -426,6 +407,62 @@
         margin-top: 35px;
         border-radius: 5px;
         border: 1px;
+      }
+      .team {
+        background-color: var(--darkblue);
+      }
+      .team-pic {
+        width: 328px;
+        height: 231px;
+      }
+      .team .card {
+        padding: 0;
+        width: 328px;
+      }
+      .team .card__content {
+        padding: 30px;
+        gap: 5px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+      }
+      .team__name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        color: var(--darkblue);
+        margin: 0 auto;
+      }
+      .team__occupation {
+        font-weight: 600;
+        line-height: 24px;
+        color: #737373;
+        font-size: 14px;
+        margin: 0 auto;
+      }
+      .team a {
+        text-decoration: none;
+      }
+      .team__socials{
+        height: 24px;  
+      }
+      .team__social-icons {
+        justify-content: center;
+        gap: 15px;
+      }
+      .team .card {
+        margin-bottom: 80px;
+      }
+      @media screen and (min-width: 360px) and (max-width:768) {
+      .team__title {
+        margin-top: 75px;
+        width: 203px;
+      }
+      .team__subtitle {
+        margin-bottom: 45px;
+        width: 262px;
+      }
       }
     </style>
   </head>
@@ -565,117 +602,6 @@
         </div>
       </div>
     </section>
-     <footer class="footer">
-      <section class="footer__primary">
-        <div class="container">
-          <div class="footer__content">
-            <a href="#KMarketer" class="footer__logo">
-              <img src="img/KMarketer.svg" alt="the brand image" class="logo__img" />
-            </a>
-            <ul class="footer__socials">
-              <li>
-                <a href="#facebbok" class="socials_link"><img src="img-footer/facebook.svg" alt="facebook logo" class="social__logo"/></a>
-              </li>
-              <li>
-                <a href="#insta" class="socials_link"><img src="img-footer/insta.svg" alt="insta logo" class="social__logo"/></a>
-              </li>
-              <li>
-                <a href="#twitter" class="socials_link"><img src="img-footer/twitter.svg" alt="twitter logo" class="social__logo"/></a>
-              </li>
-              <li>
-                <a href="#youtube" class="socials_link"><img src="img-footer/youtube.svg" alt="youtube logo" class="social__logo"/></a>
-              </li>
-            </ul>
-            <hr class="footer__divider"></hr>
-            <div class="footer__main-content">
-              <nav class="footer__nav">
-                <div class="nav__block">
-                  <h5 class="footer__title">Company Info</h5>
-                  <ul class="nav__list">
-                    <li class="nav__list-item">
-                      <a href="#">About Us</a>
-                    </li>
-                    <li class="nav__list-item">
-                      <a href="#">Career</a>
-                    </li>
-                    <li class="nav__list-item">
-                      <a href="#">We are hiring</a>
-                    </li>
-                    <li class="nav__list-item">
-                      <a href="#">Blog</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="nav__block">
-                  <h5 class="footer__title">Legal</h5>
-                  <ul class="nav__list">
-                    <li class="nav__list-item">
-                      <a href="#">About Us</a>
-                    </li>
-                    <li class="nav__list-item">
-                      <a href="#">Career</a>
-                    </li>
-                    <li class="nav__list-item">
-                      <a href="#">We are hiring</a>
-                    </li>
-                    <li class="nav__list-item">
-                       <a href="#">Blog</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="nav__block">
-                  <h5 class="footer__title">Features</h5>
-                  <ul class="nav__list">
-                    <li class="nav__list-item">
-                      <a href="#">Business Marketing</a>
-                    </li>
-                    <li class="nav__list-item">
-                      <a href="#">User Analytic</a>
-                    </li>
-                    <li class="nav__list-item">
-                      <a href="#">Live Chat</a>
-                    </li>
-                    <li class="nav__list-item">
-                      <a href="#">Unlimited Support</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="nav__block">
-                  <h5 class="footer__title">Resources</h5>
-                  <ul class="nav__list">
-                    <li class="nav__list-item">
-                      <a href="#">IOS & Android</a>
-                    </li>
-                    <li class="nav__list-item">
-                      <a href="#">Watch a Demo</a>
-                    </li>
-                    <li class="nav__list-item">
-                     <a href="#">Customers</a>
-                    </li>
-                    <li class="nav__list-item">
-                      <a href="#">API</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-              <div class="footer__subscription">
-                <h5 class="footer__title">Get in Touch</h5>
-                <form class="subscription__form" action="submit">
-                  <input class="form__input" type="email" placeholder="Your Email"/>
-                  <input class="form__submit" type="submit" value="Subscribe"/>
-                </form>
-                <p class="title">Lorem impsum dolor amit</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="footer__secondary">
-        <div class="container">
-          <p class="footer__sec-title">Made With Love By Figmaland All Right Reserved</p>
-        </div>
-      </section>
-    </footer>
     <section class="business-service">
       <div class="container">
         <div class="video__main-content">
@@ -812,6 +738,212 @@
           </div>
       </div>
     </section>
-    
+    <section class="team">
+      <div class="container">
+        <div class="team__main-content">
+          <h2 class="team__title">Meet Our Team</h2>
+          <p class="team__subtitle">Problems trying to resolve the conflict between 
+            the two major realms of Classical physics: Newtonian mechanics</p>
+        </div>
+        <div class="cards-grid">
+          <div class="card">
+            <img
+                src="img-team/team-1.png"
+                class="team__pic"
+                alt="ceo picture"
+              />
+            <div class="card__content">
+              <h5 class="team__name">Ashley Fletcher</h5>
+                <h6 class="team__occupation">CEO</h6>
+                <div class="team__social-icons">
+                <a href="#"><img
+                  src="img-team/team-fb.svg"
+                  class="team__socials"
+                  alt="facebook image"/>
+                </a>
+                <a href="#"><img
+                  src="img-team/team-insta.svg"
+                  class="team__socials"
+                  alt="instagram image"/>
+                </a>
+                <a href="#"><img
+                  src="img-team/team-twitter.svg"
+                  class="team__socials"
+                  alt="twitter image"/>
+                </a>
+                </div>
+              </div>
+          </div>  
+          <div class="card">
+              <img
+                src="img-team/team-1.png"
+                class="team__pic"
+                alt="ceo picture"
+              />
+            <div class="card__content">
+              <h5 class="team__name">Rodney Stratton</h5>
+                <h6 class="team__occupation">Consultant</h6>
+                <div class="team__social-icons">
+                <a href="#"><img
+                  src="img-team/team-fb.svg"
+                  class="team__socials"
+                  alt="facebook image"/>
+                </a>
+                <a href="#"><img
+                  src="img-team/team-insta.svg"
+                  class="team__socials"
+                  alt="instagram image"/>
+                </a>
+                <a href="#"><img
+                  src="img-team/team-twitter.svg"
+                  class="team__socials"
+                  alt="twitter image"/>
+                </a>
+                </div>
+              </div>
+          </div>
+          <div class="card">
+            <img
+                src="img-team/team-2.png"
+                class="team__pic"
+                alt="ceo picture"
+              />
+            <div class="card__content">
+              <h5 class="team__name">Avie Beaton</h5>
+                <h6 class="team__occupation">Co-Founder</h6>
+                <div class="team__social-icons">
+                <a href="#"><img
+                  src="img-team/team-fb.svg"
+                  class="team__socials"
+                  alt="facebook image"/>
+                </a>
+                <a href="#"><img
+                  src="img-team/team-insta.svg"
+                  class="team__socials"
+                  alt="instagram image"/>
+                </a>
+                <a href="#"><img
+                  src="img-team/team-twitter.svg"
+                  class="team__socials"
+                  alt="twitter image"/>
+                </a>
+                </div>
+              </div>
+            </div>
+         </div> 
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <section class="footer__primary">
+        <div class="container">
+          <div class="footer__content">
+            <a href="#KMarketer" class="footer__logo">
+              <img src="img/KMarketer.svg" alt="the brand image" class="logo__img" />
+            </a>
+            <ul class="footer__socials">
+              <li>
+                <a href="#facebbok" class="socials_link"><img src="img-footer/facebook.svg" alt="facebook logo" class="social__logo"/></a>
+              </li>
+              <li>
+                <a href="#insta" class="socials_link"><img src="img-footer/insta.svg" alt="insta logo" class="social__logo"/></a>
+              </li>
+              <li>
+                <a href="#twitter" class="socials_link"><img src="img-footer/twitter.svg" alt="twitter logo" class="social__logo"/></a>
+              </li>
+              <li>
+                <a href="#youtube" class="socials_link"><img src="img-footer/youtube.svg" alt="youtube logo" class="social__logo"/></a>
+              </li>
+            </ul>
+            <hr class="footer__divider"></hr>
+            <div class="footer__main-content">
+              <nav class="footer__nav">
+                <div class="nav__block">
+                  <h5 class="footer__title">Company Info</h5>
+                  <ul class="nav__list">
+                    <li class="nav__list-item">
+                      <a href="#">About Us</a>
+                    </li>
+                    <li class="nav__list-item">
+                      <a href="#">Career</a>
+                    </li>
+                    <li class="nav__list-item">
+                      <a href="#">We are hiring</a>
+                    </li>
+                    <li class="nav__list-item">
+                      <a href="#">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="nav__block">
+                  <h5 class="footer__title">Legal</h5>
+                  <ul class="nav__list">
+                    <li class="nav__list-item">
+                      <a href="#">About Us</a>
+                    </li>
+                    <li class="nav__list-item">
+                      <a href="#">Career</a>
+                    </li>
+                    <li class="nav__list-item">
+                      <a href="#">We are hiring</a>
+                    </li>
+                    <li class="nav__list-item">
+                       <a href="#">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="nav__block">
+                  <h5 class="footer__title">Features</h5>
+                  <ul class="nav__list">
+                    <li class="nav__list-item">
+                      <a href="#">Business Marketing</a>
+                    </li>
+                    <li class="nav__list-item">
+                      <a href="#">User Analytic</a>
+                    </li>
+                    <li class="nav__list-item">
+                      <a href="#">Live Chat</a>
+                    </li>
+                    <li class="nav__list-item">
+                      <a href="#">Unlimited Support</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="nav__block">
+                  <h5 class="footer__title">Resources</h5>
+                  <ul class="nav__list">
+                    <li class="nav__list-item">
+                      <a href="#">IOS & Android</a>
+                    </li>
+                    <li class="nav__list-item">
+                      <a href="#">Watch a Demo</a>
+                    </li>
+                    <li class="nav__list-item">
+                     <a href="#">Customers</a>
+                    </li>
+                    <li class="nav__list-item">
+                      <a href="#">API</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="footer__subscription">
+                <h5 class="footer__title">Get in Touch</h5>
+                <form class="subscription__form" action="submit">
+                  <input class="form__input" type="email" placeholder="Your Email"/>
+                  <input class="form__submit" type="submit" value="Subscribe"/>
+                </form>
+                <p class="title">Lorem impsum dolor amit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer__secondary">
+        <div class="container">
+          <p class="footer__sec-title">Made With Love By Figmaland All Right Reserved</p>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
