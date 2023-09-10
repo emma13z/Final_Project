@@ -1,4 +1,4 @@
-/* HW_1
+// HW-1 //
 
 let country = `Moldova`; 
 let continent = `Europe`; 
@@ -9,7 +9,9 @@ console.log(population);
 let isIsland = false;
 let countryDescription = `${country} is located in ${continent}, ${population} million people live here.`;
 console.log(isIsland); 
-console.log(countryDescription);  */
+console.log(countryDescription);  
+
+// HW-2 //
 
 let weightSarah = 65;
 let weightBob = 93;
@@ -20,24 +22,4 @@ console.log (weightSarah);
 console.log (weightBob);
 console.log (heightSarah);
 console.log (heightBob);
-
-let sarahBMI = weightSarah / (heightSarah**2);
-console.log (sarahBMI);
-
-if (sarahBMI < 18.5) {
-    console.log('Sarah is underweight');
-
-} else if (sarahBMI >= 18.5 && sarahBMI <= 25) {
-    console.log('Sarah has normal weight');
-}
-
-let bobBMI = weightBob / (heightBob**2);
-console.log (bobBMI);
-
-if (bobBMI <= 18.5 || bobBMI > 25) {
-    console.log('Bob is underweight or overweight');
-
-} else {
-    console.log('Bob has normal weight');
-}
 
