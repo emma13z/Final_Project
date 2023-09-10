@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css?family=Montserrat"
       rel="stylesheet"
     />
+    <script src="script.js"></script>
     <style>
       :root {
         --darkblue: #252b42;
@@ -108,7 +109,7 @@
       .button-learn {
         background-color: transparent;
       }
-      @media screen and (min-width: 360px) and (max-width:768px) {
+      @media screen and (min-width: 360px) and (max-width: 768px) {
         body {
           background-position: center;
         }
@@ -116,7 +117,7 @@
           display: flex;
           flex-direction: column;
           align-items: center;
-          margin-bottom:80px;
+          margin-bottom: 80px;
           line-height: 3em;
         }
         .header-nav {
@@ -126,9 +127,9 @@
           margin-left: 0;
         }
         .action-buttons {
-           flex-direction: column;
-           align-items: center;
-         }
+          flex-direction: column;
+          align-items: center;
+        }
         .button-learn,
         .button-quote {
           font-size: 0.5em;
@@ -214,10 +215,11 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
-        grid-template-areas: 'logo socials'
-                             'divider divider'
-                             'main main';
-        width:100%; 
+        grid-template-areas:
+          "logo socials"
+          "divider divider"
+          "main main";
+        width: 100%;
       }
       .footer__divider {
         grid-area: divider;
@@ -253,8 +255,8 @@
         margin: 70px 0;
       }
       .footer__nav {
-       display: flex;
-       gap: 30px;
+        display: flex;
+        gap: 30px;
       }
       .footer__title {
         font-size: 16px;
@@ -273,12 +275,12 @@
         text-decoration: underline;
       }
       .nav__list-item a {
-        line-height: 24px; 
-        color: #BDBDBD;
+        line-height: 24px;
+        color: #bdbdbd;
       }
       .subscription__form {
         display: flex;
-        border: 1px solid #E6E6E6;
+        border: 1px solid #e6e6e6;
         border-radius: 5px;
         align-items: center;
       }
@@ -300,16 +302,16 @@
         cursor: pointer;
         text-align: center;
         line-height: 28px;
-        height: 58px; 
+        height: 58px;
       }
       .footer__subscription .title {
-        color: #BDBDBD;
+        color: #bdbdbd;
         font-size: 12px;
         font-weight: 400;
-        line-height: 28px; 
+        line-height: 28px;
         margin: 0;
       }
-      .footer__secondary .container{
+      .footer__secondary .container {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -317,15 +319,15 @@
       .footer__sec-title {
         display: flex;
         padding: 9px 0px;
-        line-height: 24px;   
+        line-height: 24px;
         width: 600px;
       }
       .business-service {
-        background: linear-gradient(
-          rgba(37, 43, 66, 1),
-          rgba(22, 105, 122, 1));
+        background: linear-gradient(rgba(37, 43, 66, 1), rgba(22, 105, 122, 1));
       }
-      .video__main-content, .clients__main-content, .team__main-content {
+      .video__main-content,
+      .clients__main-content,
+      .team__main-content {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -333,29 +335,33 @@
         width: 864px;
         margin-top: 80px;
       }
-      .video__title, .clients__title, .team__title {
-        width: 461px;       
+      .video__title,
+      .clients__title,
+      .team__title {
+        width: 461px;
         font-weight: 700;
         line-height: 57px;
         font-size: 40px;
         text-align: center;
         margin: 0 auto;
       }
-      .video__subtitle, .clients__subtitle, .team__subtitle {
-        width: 470px;       
+      .video__subtitle,
+      .clients__subtitle,
+      .team__subtitle {
+        width: 470px;
         font-weight: 500;
         line-height: 20px;
         font-size: 14px;
         text-align: center;
         margin: 0 auto;
-        margin-bottom: 50px ;
+        margin-bottom: 50px;
       }
-      .video__web{
+      .video__web {
         margin-bottom: 80px;
         width: 877px;
         height: 442px;
       }
-      @media screen and (min-width: 360px) and (max-width:768px) {
+      @media screen and (min-width: 360px) and (max-width: 768px) {
         .container {
           display: flex;
           flex-direction: column;
@@ -393,10 +399,11 @@
         height: 50px;
         border: 1px;
         display: flex;
-        float:left;
+        float: left;
         margin-right: 15px;
       }
-      .employee-name, .employee-occupation {
+      .employee-name,
+      .employee-occupation {
         font-weight: 600;
         line-height: 24px;
         color: var(--orange);
@@ -426,7 +433,7 @@
         border-radius: 5px;
         border: 1px;
       }
-      @media screen and (min-width: 360px) and (max-width:768px) {
+      @media screen and (min-width: 360px) and (max-width: 768px) {
         .clients__main-content {
           display: flex;
           flex-direction: column;
@@ -484,8 +491,8 @@
       .team a {
         text-decoration: none;
       }
-      .team__socials{
-        height: 24px;  
+      .team__socials {
+        height: 24px;
       }
       .team__social-icons {
         justify-content: center;
@@ -497,7 +504,7 @@
       .team__pic-MQ {
         display: none;
       }
-      @media screen and (min-width: 360px) and (max-width:768px) {
+      @media screen and (min-width: 360px) and (max-width: 768px) {
         .team__main-content {
           margin: 0;
         }
@@ -669,12 +676,15 @@
       <div class="container">
         <div class="video__main-content">
           <h2 class="video__title">We are providing best business service.</h2>
-          <p class="video__subtitle">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+          <p class="video__subtitle">
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
+          </p>
         </div>
         <div class="video">
           <video class="video__web" poster="img-video/video-cover.png" controls>
-            <source src="img-video/CSS in 100 Seconds.mp4" type="video/mp4">
-          Your browser does not support the video tag.
+            <source src="img-video/CSS-video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
           </video>
         </div>
       </div>
@@ -683,8 +693,10 @@
       <div class="container">
         <div class="clients__main-content">
           <h2 class="clients__title">What Clients Say</h2>
-          <p class="clients__subtitle">Problems trying to resolve the conflict between 
-            the two major realms of Classical physics: Newtonian mechanics </p>
+          <p class="clients__subtitle">
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
+          </p>
         </div>
         <div class="cards-grid">
           <div class="card">
@@ -714,8 +726,11 @@
                 class="star-rating"
                 alt="star rating image"
               />
-              <h6 class="employee-review">Slate helps you see how many more days you need to work to reach your financial goal.</h6>
-              <img 
+              <h6 class="employee-review">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </h6>
+              <img
                 src="img-clients/Designer-1.png"
                 class="employee-pic"
                 alt="designer image"
@@ -724,9 +739,9 @@
               <h6 class="employee-occupation">Designer</h6>
             </div>
           </div>
-            <div class="card">
-              <div class="card__content">
-                <img
+          <div class="card">
+            <div class="card__content">
+              <img
                 src="img-clients/yellow-star.svg"
                 class="star-rating"
                 alt="star rating image"
@@ -751,164 +766,189 @@
                 class="star-rating"
                 alt="star rating image"
               />
-                <h6 class="employee-review">Slate helps you see how many more days you need to work to reach your financial goal.</h6>
-                <img
-                  src="img-clients/Designer-2.png"
-                  class="employee-pic"
-                  alt="designer image"
-                />
-                <p class="employee-name">Regina Miles</p>
-                <h6 class="employee-occupation">Designer</h6>
-              </div>
+              <h6 class="employee-review">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </h6>
+              <img
+                src="img-clients/Designer-2.png"
+                class="employee-pic"
+                alt="designer image"
+              />
+              <p class="employee-name">Regina Miles</p>
+              <h6 class="employee-occupation">Designer</h6>
             </div>
-              <div class="card">
-                <div class="card__content">
-                  <img
-                  src="img-clients/yellow-star.svg"
-                  class="star-rating"
-                  alt="star rating image"
-                />
-                <img
-                  src="img-clients/yellow-star.svg"
-                  class="star-rating"
-                  alt="star rating image"
-                />
-                <img
-                  src="img-clients/yellow-star.svg"
-                  class="star-rating"
-                  alt="star rating image"
-                />
-                <img
-                  src="img-clients/yellow-star.svg"
-                  class="star-rating"
-                  alt="star rating image"
-                />
-                <img
-                  src="img-clients/empty-star.svg"
-                  class="star-rating"
-                  alt="star rating image"
-                />
-                  <h6 class="employee-review">Slate helps you see how many more days you need to work to reach your financial goal.</h6>
-                  <img 
-                    src="img-clients/Designer-3.png"
-                    class="employee-pic"
-                    alt="designer image"
-                  />
-                  <p class="employee-name">Regina Miles</p>
-                  <h6 class="employee-occupation">Designer</h6>
-                </div>
-              </div>
           </div>
+          <div class="card">
+            <div class="card__content">
+              <img
+                src="img-clients/yellow-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+              <img
+                src="img-clients/yellow-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+              <img
+                src="img-clients/yellow-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+              <img
+                src="img-clients/yellow-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+              <img
+                src="img-clients/empty-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+              <h6 class="employee-review">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </h6>
+              <img
+                src="img-clients/Designer-3.png"
+                class="employee-pic"
+                alt="designer image"
+              />
+              <p class="employee-name">Regina Miles</p>
+              <h6 class="employee-occupation">Designer</h6>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="team">
       <div class="container">
         <div class="team__main-content">
           <h2 class="team__title">Meet Our Team</h2>
-          <p class="team__subtitle">Problems trying to resolve the conflict between 
-            the two major realms of Classical physics: Newtonian mechanics</p>
+          <p class="team__subtitle">
+            Problems trying to resolve the conflict between the two major realms
+            of Classical physics: Newtonian mechanics
+          </p>
         </div>
         <div class="cards-grid">
           <div class="card">
             <img
-                src="img-team/team-1.png"
-                class="team__pic"
-                alt="ceo picture"
-              />
-              <img
+              src="img-team/team-1.png"
+              class="team__pic"
+              alt="ceo picture"
+            />
+            <img
               src="img-team/team-1-3-MQ.png"
               class="team__pic-MQ"
               alt="ceo picture"
-              />
+            />
             <div class="card__content">
               <h5 class="team__name">Ashley Fletcher</h5>
-                <h6 class="team__occupation">CEO</h6>
-                <div class="team__social-icons">
-                <a href="#"><img
-                  src="img-team/team-fb.svg"
-                  class="team__socials"
-                  alt="facebook image"/>
+              <h6 class="team__occupation">CEO</h6>
+              <div class="team__social-icons">
+                <a href="#"
+                  ><img
+                    src="img-team/team-fb.svg"
+                    class="team__socials"
+                    alt="facebook image"
+                  />
                 </a>
-                <a href="#"><img
-                  src="img-team/team-insta.svg"
-                  class="team__socials"
-                  alt="instagram image"/>
+                <a href="#"
+                  ><img
+                    src="img-team/team-insta.svg"
+                    class="team__socials"
+                    alt="instagram image"
+                  />
                 </a>
-                <a href="#"><img
-                  src="img-team/team-twitter.svg"
-                  class="team__socials"
-                  alt="twitter image"/>
+                <a href="#"
+                  ><img
+                    src="img-team/team-twitter.svg"
+                    class="team__socials"
+                    alt="twitter image"
+                  />
                 </a>
-                </div>
               </div>
-          </div>  
-          <div class="card">
-              <img
-                src="img-team/team-1.png"
-                class="team__pic"
-                alt="ceo picture"
-              />
-              <img
-              src="img-team/team-2-MQ.png"
-              class="team__pic-MQ"
-              alt="ceo picture"
-              />
-            <div class="card__content">
-              <h5 class="team__name">Rodney Stratton</h5>
-                <h6 class="team__occupation">Consultant</h6>
-                <div class="team__social-icons">
-                <a href="#"><img
-                  src="img-team/team-fb.svg"
-                  class="team__socials"
-                  alt="facebook image"/>
-                </a>
-                <a href="#"><img
-                  src="img-team/team-insta.svg"
-                  class="team__socials"
-                  alt="instagram image"/>
-                </a>
-                <a href="#"><img
-                  src="img-team/team-twitter.svg"
-                  class="team__socials"
-                  alt="twitter image"/>
-                </a>
-                </div>
-              </div>
+            </div>
           </div>
           <div class="card">
             <img
-                src="img-team/team-2.png"
-                class="team__pic"
-                alt="ceo picture"
-              />
-              <img
+              src="img-team/team-1.png"
+              class="team__pic"
+              alt="ceo picture"
+            />
+            <img
+              src="img-team/team-2-MQ.png"
+              class="team__pic-MQ"
+              alt="ceo picture"
+            />
+            <div class="card__content">
+              <h5 class="team__name">Rodney Stratton</h5>
+              <h6 class="team__occupation">Consultant</h6>
+              <div class="team__social-icons">
+                <a href="#"
+                  ><img
+                    src="img-team/team-fb.svg"
+                    class="team__socials"
+                    alt="facebook image"
+                  />
+                </a>
+                <a href="#"
+                  ><img
+                    src="img-team/team-insta.svg"
+                    class="team__socials"
+                    alt="instagram image"
+                  />
+                </a>
+                <a href="#"
+                  ><img
+                    src="img-team/team-twitter.svg"
+                    class="team__socials"
+                    alt="twitter image"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="img-team/team-2.png"
+              class="team__pic"
+              alt="ceo picture"
+            />
+            <img
               src="img-team/team-1-3-MQ.png"
               class="team__pic-MQ"
               alt="ceo picture"
-              />
+            />
             <div class="card__content">
               <h5 class="team__name">Avie Beaton</h5>
-                <h6 class="team__occupation">Co-Founder</h6>
-                <div class="team__social-icons">
-                <a href="#"><img
-                  src="img-team/team-fb.svg"
-                  class="team__socials"
-                  alt="facebook image"/>
+              <h6 class="team__occupation">Co-Founder</h6>
+              <div class="team__social-icons">
+                <a href="#"
+                  ><img
+                    src="img-team/team-fb.svg"
+                    class="team__socials"
+                    alt="facebook image"
+                  />
                 </a>
-                <a href="#"><img
-                  src="img-team/team-insta.svg"
-                  class="team__socials"
-                  alt="instagram image"/>
+                <a href="#"
+                  ><img
+                    src="img-team/team-insta.svg"
+                    class="team__socials"
+                    alt="instagram image"
+                  />
                 </a>
-                <a href="#"><img
-                  src="img-team/team-twitter.svg"
-                  class="team__socials"
-                  alt="twitter image"/>
+                <a href="#"
+                  ><img
+                    src="img-team/team-twitter.svg"
+                    class="team__socials"
+                    alt="twitter image"
+                  />
                 </a>
-                </div>
               </div>
             </div>
-         </div> 
+          </div>
         </div>
       </div>
     </section>
@@ -917,23 +957,47 @@
         <div class="container">
           <div class="footer__content">
             <a href="#KMarketer" class="footer__logo">
-              <img src="img/KMarketer.svg" alt="the brand image" class="logo__img" />
+              <img
+                src="img/KMarketer.svg"
+                alt="the brand image"
+                class="logo__img"
+              />
             </a>
             <ul class="footer__socials">
               <li>
-                <a href="#facebbok" class="socials_link"><img src="img-footer/facebook.svg" alt="facebook logo" class="social__logo"/></a>
+                <a href="#facebbok" class="socials_link"
+                  ><img
+                    src="img-footer/facebook.svg"
+                    alt="facebook logo"
+                    class="social__logo"
+                /></a>
               </li>
               <li>
-                <a href="#insta" class="socials_link"><img src="img-footer/insta.svg" alt="insta logo" class="social__logo"/></a>
+                <a href="#insta" class="socials_link"
+                  ><img
+                    src="img-footer/insta.svg"
+                    alt="insta logo"
+                    class="social__logo"
+                /></a>
               </li>
               <li>
-                <a href="#twitter" class="socials_link"><img src="img-footer/twitter.svg" alt="twitter logo" class="social__logo"/></a>
+                <a href="#twitter" class="socials_link"
+                  ><img
+                    src="img-footer/twitter.svg"
+                    alt="twitter logo"
+                    class="social__logo"
+                /></a>
               </li>
               <li>
-                <a href="#youtube" class="socials_link"><img src="img-footer/youtube.svg" alt="youtube logo" class="social__logo"/></a>
+                <a href="#youtube" class="socials_link"
+                  ><img
+                    src="img-footer/youtube.svg"
+                    alt="youtube logo"
+                    class="social__logo"
+                /></a>
               </li>
             </ul>
-            <hr class="footer__divider"></hr>
+            <hr class="footer__divider" />
             <div class="footer__main-content">
               <nav class="footer__nav">
                 <div class="nav__block">
@@ -966,7 +1030,7 @@
                       <a href="#">We are hiring</a>
                     </li>
                     <li class="nav__list-item">
-                       <a href="#">Blog</a>
+                      <a href="#">Blog</a>
                     </li>
                   </ul>
                 </div>
@@ -997,7 +1061,7 @@
                       <a href="#">Watch a Demo</a>
                     </li>
                     <li class="nav__list-item">
-                     <a href="#">Customers</a>
+                      <a href="#">Customers</a>
                     </li>
                     <li class="nav__list-item">
                       <a href="#">API</a>
@@ -1008,8 +1072,12 @@
               <div class="footer__subscription">
                 <h5 class="footer__title">Get in Touch</h5>
                 <form class="subscription__form" action="submit">
-                  <input class="form__input" type="email" placeholder="Your Email"/>
-                  <input class="form__submit" type="submit" value="Subscribe"/>
+                  <input
+                    class="form__input"
+                    type="email"
+                    placeholder="Your Email"
+                  />
+                  <input class="form__submit" type="submit" value="Subscribe" />
                 </form>
                 <p class="title">Lorem impsum dolor amit</p>
               </div>
@@ -1019,7 +1087,9 @@
       </section>
       <section class="footer__secondary">
         <div class="container">
-          <p class="footer__sec-title">Made With Love By Figmaland All Right Reserved</p>
+          <p class="footer__sec-title">
+            Made With Love By Figmaland All Right Reserved
+          </p>
         </div>
       </section>
     </footer>
