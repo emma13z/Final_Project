@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KMarketer</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --darkblue: #252b42;
+        --orange: #ffa62b;
+        --grey: #737373;
+      }
+      body {
+        position: relative;
+        margin: 0 auto;
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      .top-banner {
+        padding: 40px 0 120px;
+        background-image: url(img/background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      .header {
+        width: 100%;
+        display: flex;
+        max-width: 1050px;
+        margin-bottom: 160px;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .nav-list,
+      .header-nav,
+      .nav-icons {
+        display: flex;
+        gap: 21px;
+      }
+      .header-nav {
+        margin-left: auto;
+        align-items: center;
+      }
+      .nav-icons {
+        margin-left: 40px;
+        align-items: center;
+      }
+      li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        max-width: 1020px;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+      }
+      .content {
+        max-width: 570px;
+      }
+      .top-banner__title,
+      .top-banner__subtitle {
+        text-align: center;
+        font-size: 58px;
+        font-style: normal;
+        line-height: 80px;
+      }
+      .top-banner__subtitle {
+        font-size: 20px;
+        line-height: 30px;
+      }
+      .action-buttons {
+        display: flex;
+        justify-content: center;
+      }
+      .button-quote,
+      .button-learn {
+        color: white;
+        background-color: var(--orange);
+        padding: 10px 36px;
+        border-radius: 37px;
+        line-height: 28px;
+        gap: 10px;
+        border: 1px solid white;
+        cursor: pointer;
+        font-size: 14px;
+      }
+      .button-quote {
+        border: none;
+      }
+      .button-learn {
+        background-color: transparent;
+      }
+      @media screen and (min-width: 320px) and (max-width: 570px) {
+        body {
+          background-position: center;
+        }
+        .header {
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 1em;
+          line-height: 3em;
+        }
+        .header-nav {
+          margin: 0 auto;
+        }
+        .nav-icons {
+          margin-left: 0;
+        }
+        .top-banner__title {
+          font-size: 1.2em;
+          line-height: 3em;
+          margin-top: 70px;
+        }
+        .top-banner__subtitle {
+          font-size: 0.6em;
+          line-height: 1.5em;
+        }
+        .action-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+        .button-learn,
+        .button-quote {
+          font-size: 0.5em;
+          line-height: 1.5em;
+          padding: 10px 36px;
+        }
+        .button-learn {
+          margin-top: 25px;
+        }
+      }
+      .why-us {
+        background-color: var(--darkblue);
+        background-size: cover;
+        display: flex;
+        padding: 0 195px;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+        padding: 100px 0;
+      }
+      .section__title {
+        font-size: 40px;
+        line-height: 57px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+      .section__subtitle {
+        font-weight: 500;
+        line-height: 20px;
+        width: 470px;
+        text-align: center;
+      }
+      .cards-grid {
+        color: black;
+        display: grid;
+        margin-top: 45px;
+        grid-template-columns: auto auto auto;
+        gap: 30px;
+        border: 1px;
+        background-color: var(--darkblue);
+      }
+      .cards-grid > div {
+        background-color: white;
+        text-align: center;
+      }
+      .card {
+        display: flex;
+        padding: 35px 40px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .card__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        color: var(--darkblue);
+      }
+      .header__icn {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+      }
+      .card__content {
+        font-weight: 500;
+        line-height: 20px;
+        width: 245px;
+        color: var(--grey);
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="top-banner">
+      <div class="container">
+        <header class="header">
+          <a href="#KMarketer" class="logo">
+            <img src="img/KMarketer.svg" alt="the brand image" />
+          </a>
+          <nav class="header-nav">
+            <ul class="nav-list">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#product">Product</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <ul class="nav-icons">
+            <li>
+              <a href="#search">
+                <img src="img/search-icon.svg" alt="search icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#cart">
+                <img src="img/shop-cart-icon.svg" alt="shopping-cart icon" />
+              </a>
+            </li>
+          </ul>
+        </header>
+        <div class="content">
+          <h1 class="top-banner__title">We Take Care of the Future</h1>
+          <h4 class="top-banner__subtitle">
+            We know how large objects will act, but things on a small scale just
+            do not act that way.
+          </h4>
+          <div class="action-buttons">
+            <button type="button" class="button-quote">Get Quote Now</button>
+            <button type="button" class="button-learn">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="why-us">
+      <div class="container">
+        <h2 class="section__title">Why choose us</h2>
+        <p class="section__subtitle">
+          Problems trying to resolve the conflict between the two major realms
+          of Classical physics: Newtonian mechanics
+        </p>
+        <div class="cards-grid">
+          <div class="card">
+            <div class="card__header">
+              <img
+                src="img-why-us/case.svg"
+                class="header__icn"
+                alt="case image"
+              />
+              <h5>Digital Marketing</h5>
+            </div>
+            <p class="card__content">
+              the quick fox jumps over the lazy dog the quick fox jumps over the
+              lazy dog
+            </p>
+          </div>
+          <div class="card">
+            <div class="card__header">
+              <img
+                src="img-why-us/shop.svg"
+                class="header__icn"
+                alt="shop image"
+              />
+              <h5>Digital Marketing</h5>
+            </div>
+            <p class="card__content">
+              the quick fox jumps over the lazy dog the quick fox jumps over the
+              lazy dog
+            </p>
+          </div>
+          <div class="card">
+            <div class="card__header">
+              <img
+                src="img-why-us/notebook.svg"
+                class="header__icn"
+                alt="notebook image"
+              />
+              <h5>Business Growing</h5>
+            </div>
+            <p class="card__content">
+              the quick fox jumps over the lazy dog the quick fox jumps over the
+              lazy dog
+            </p>
+          </div>
+          <div class="card">
+            <div class="card__header">
+              <img
+                src="img-why-us/users.svg"
+                class="header__icn"
+                alt="users image"
+              />
+              <h5>National top 50 firms</h5>
+            </div>
+            <p class="card__content">
+              the quick fox jumps over the lazy dog the quick fox jumps over the
+              lazy dog
+            </p>
+          </div>
+          <div class="card">
+            <div class="card__header">
+              <img
+                src="img-why-us/stats.svg"
+                class="header__icn"
+                alt="statistics image"
+              />
+              <h5>National top 50 firms</h5>
+            </div>
+            <p class="card__content">
+              the quick fox jumps over the lazy dog the quick fox jumps over the
+              lazy dog
+            </p>
+          </div>
+          <div class="card">
+            <div class="card__header">
+              <img
+                src="img-why-us/award.svg"
+                class="header__icn"
+                alt="awards image"
+              />
+              <h5>Web Development</h5>
+            </div>
+            <p class="card__content">
+              the quick fox jumps over the lazy dog the quick fox jumps over the
+              lazy dog
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
