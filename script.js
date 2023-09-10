@@ -43,3 +43,28 @@ if (bobBMI <= 18.5 || bobBMI > 25) {
     console.log('Bob has normal weight');
 }
 
+// HW-3 //
+
+let number = 10;
+let isEven = number % 2 === 0 ? "Even" : "Odd";
+console.log(number);
+console.log(isEven);
+
+let isLoggedIn = false;
+let user = isLoggedIn ? "Feel free to check our new offers" : "Please log in first";
+console.log(isLoggedIn);
+console.log(user);
+
+let pricePerUnit = 20;
+let quantity = 5;
+let availability = true;
+let totalPrice = availability ? pricePerUnit * quantity : "N/A";
+console.log(pricePerUnit);
+console.log(quantity);
+console.log(availability);
+console.log(totalPrice);
+
+let currentYear = new Date().getFullYear();
+let leapYear = currentYear % 4 === 0 || (currentYear % 400 === 0 && currentYear % 100 === 0) ? "A Leap Year" : "Not A Leap Year";
+console.log(currentYear);
+console.log(leapYear);
