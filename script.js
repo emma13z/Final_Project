@@ -152,3 +152,80 @@ calculationSupply (50, 1, 80);
 calculationSupply (30, 2, 90);
 calculationSupply (15, 0.5);
 
+// HW-4 //
+
+// Ex-1 //
+
+let fruits = [];
+fruits.push("apple","banana","orange");
+console.log(fruits.length);
+console.log(fruits);
+
+// Ex-2 //
+
+let numbers = [1, 2, 3, 4, 5];
+console.log(numbers);
+
+let removedNo1 = numbers.pop();
+console.log(numbers);
+
+let removedNo2 = numbers.shift();
+console.log(numbers);
+
+// Ex-3 //
+
+let colors = ["red", "green", "blue", "yellow"];
+let index = colors.indexOf ("green");
+let hasOrange = colors.includes ("orange");
+
+console.log(colors);
+console.log(index);
+console.log(hasOrange);
+
+// Ex-4 //
+
+let names = ["John", "Jane", "Mike", "Jennifer"];
+console.log(names);
+
+names.unshift ("David");
+console.log(names);
+
+let index2 = names.indexOf ("Mike");
+console.log(index2);
+
+// Ex-5 //
+
+ let numbers2 = [2, 4, 6, 8, 10];
+ console.log(numbers2);
+
+ let hasNo5 = numbers2.includes(5);
+ console.log(hasNo5);  
+
+ numbers2.push(12);
+ console.log(numbers2);
+
+// Ex-6 //
+
+let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+console.log(months);
+
+// Ex-8 //
+
+let monthsSliced = months.slice(6,11);
+console.log(monthsSliced); 
+
+// Ex-6 //
+
+months.sort();
+console.log(months);
+
+// Ex-7 //
+
+let monthsFiltered = months.filter((month) => month.length >3 );
+console.log(monthsFiltered);
+
+// Ex-9 //
+
+let monthsFinal= months.filter((month) => month.length >5 );
+console.log(monthsFinal);
+console.log(monthsFinal.join('-'));
