@@ -45,6 +45,8 @@ if (bobBMI <= 18.5 || bobBMI > 25) {
 
 // HW-3 //
 
+// Ternary Operator //
+
 let number = 10;
 let isEven = number % 2 === 0 ? "Even" : "Odd";
 console.log(number);
@@ -68,3 +70,47 @@ let currentYear = new Date().getFullYear();
 let leapYear = currentYear % 4 === 0 || (currentYear % 400 === 0 && currentYear % 100 === 0) ? "A Leap Year" : "Not A Leap Year";
 console.log(currentYear);
 console.log(leapYear);
+
+// Switch //
+
+let countryCode = "MD";
+switch (countryCode) {
+    case "MD":
+        console.log("Moldova");
+        break;
+    case "IN":
+        console.log("India");
+        break;
+    case "IT":
+        console.log("Italy");
+        break;
+    case "US":
+        console.log("United States");
+        break;
+    case "FR":
+        console.log("France");
+        break;
+        default:
+    console.log("Unknown country");
+}
+
+let grade = "A";
+switch (grade) {
+    case "A":
+        console.log(">=90");
+        break;
+    case "B":
+        console.log(">=80");
+        break;
+    case "C":
+        console.log(">=70");
+        break;
+    case "D":
+        console.log(">=60");
+        break;
+    case "F":
+        console.log("<=59");
+        break;
+    default:
+        console.log("Not a valid grade");
+}
