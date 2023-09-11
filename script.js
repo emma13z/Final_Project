@@ -1,7 +1,7 @@
 // HW-1 //
 
-let country = `Moldova`; 
-let continent = `Europe`; 
+let country = "Moldova"; 
+let continent = "Europe"; 
 let population = 2.6; 
 console.log(country);
 console.log(continent);
@@ -27,20 +27,20 @@ let sarahBMI = weightSarah / (heightSarah**2);
 console.log (sarahBMI);
 
 if (sarahBMI < 18.5) {
-    console.log('Sarah is underweight');
+    console.log("Sarah is underweight");
 
 } else if (sarahBMI >= 18.5 && sarahBMI <= 25) {
-    console.log('Sarah has normal weight');
+    console.log("Sarah has normal weight");
 }
 
 let bobBMI = weightBob / (heightBob**2);
 console.log (bobBMI);
 
 if (bobBMI <= 18.5 || bobBMI > 25) {
-    console.log('Bob is underweight or overweight');
+    console.log("Bob is underweight or overweight");
 
 } else {
-    console.log('Bob has normal weight');
+    console.log("Bob has normal weight");
 }
 
 // HW-3 //
@@ -94,22 +94,22 @@ switch (countryCode) {
     console.log("Unknown country");
 }
 
-let grade = "A";
-switch (grade) {
-    case "A":
-        console.log(">=90");
+let points = "65";
+switch (true) {
+    case points >=90:
+        console.log("A");
         break;
-    case "B":
-        console.log(">=80");
+    case points >=80:
+        console.log("B");
         break;
-    case "C":
-        console.log(">=70");
+    case points >=70:
+        console.log("C");
         break;
-    case "D":
-        console.log(">=60");
+    case points >=60:
+        console.log("D");
         break;
-    case "F":
-        console.log("<=59");
+    case points <=59:
+        console.log("F");
         break;
     default:
         console.log("Not a valid grade");
@@ -123,29 +123,24 @@ function tellFortune (n, z, y, x) {
     return (`You will be a ${x} in ${y} and will get married to ${z} with ${n} kids`);
 }
 
-let person1 = tellFortune (2, 'John', 'London', 'CFO');
+let person1 = tellFortune (2, "John", "London", "CFO");
 console.log(person1);
 
-let person2 = tellFortune (3, 'Jack', 'Madrid', 'PR Specialist');
+let person2 = tellFortune (3, "Jack", "Madrid", "PR Specialist");
 console.log(person2);
 
-let person3 = tellFortune (4, 'Bob', 'Paris', 'CTO');
+let person3 = tellFortune (4, "Bob", "Paris", "CTO");
 console.log(person3);
 
 // Dog's age exercise //
 
-function calculatedDogAge (humanyears, coefficient=7) {
-    return (`Your dog is ${humanyears} years old in dog years`);
-}
-
-let dog1 = calculatedDogAge (4*7);
-console.log(dog1);
-
-let dog2 = calculatedDogAge (6*7);
-console.log(dog2);
-
-let dog3 = calculatedDogAge (1*7);
-console.log(dog3);
+function calculatedDogAge (humanYears, coefficient=7) {
+    let dogAge = humanYears*7;
+    console.log(`Your dog is ${dogAge} years old in dog years`);
+};
+calculatedDogAge (4);
+calculatedDogAge (6);
+calculatedDogAge (1);
 
 // Calculation Supply //
 
@@ -153,7 +148,6 @@ let calculationSupply = (age, foodQuantity, maxAge=100) => {
 let result = (maxAge-age)*foodQuantity*365;
 console.log(`You will need ${result} kg of food to survive until you are ${maxAge} years old`);
 };
-
 calculationSupply (50, 1, 80);
 calculationSupply (30, 2, 90);
 calculationSupply (15, 0.5);
