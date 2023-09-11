@@ -114,3 +114,47 @@ switch (grade) {
     default:
         console.log("Not a valid grade");
 }
+
+// Function //
+
+//tellFortune exercise //
+
+function tellFortune (n, z, y, x) {
+    return (`You will be a ${x} in ${y} and will get married to ${z} with ${n} kids`);
+}
+
+let person1 = tellFortune (2, 'John', 'London', 'CFO');
+console.log(person1);
+
+let person2 = tellFortune (3, 'Jack', 'Madrid', 'PR Specialist');
+console.log(person2);
+
+let person3 = tellFortune (4, 'Bob', 'Paris', 'CTO');
+console.log(person3);
+
+// Dog's age exercise //
+
+function calculatedDogAge (humanyears, coefficient=7) {
+    return (`Your dog is ${humanyears} years old in dog years`);
+}
+
+let dog1 = calculatedDogAge (4*7);
+console.log(dog1);
+
+let dog2 = calculatedDogAge (6*7);
+console.log(dog2);
+
+let dog3 = calculatedDogAge (1*7);
+console.log(dog3);
+
+// Calculation Supply //
+
+let calculationSupply = (age, foodQuantity, maxAge=100) => {
+let result = (maxAge-age)*foodQuantity*365;
+console.log(`You will need ${result} kg of food to survive until you are ${maxAge} years old`);
+};
+
+calculationSupply (50, 1, 80);
+calculationSupply (30, 2, 90);
+calculationSupply (15, 0.5);
+
