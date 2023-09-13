@@ -175,8 +175,8 @@ console.log(numbers);
 // Ex-3 //
 
 let colors = ["red", "green", "blue", "yellow"];
-let index = colors.indexOf ("green");
-let hasOrange = colors.includes ("orange");
+let index = colors.indexOf("green");
+let hasOrange = colors.includes("orange");
 
 console.log(colors);
 console.log(index);
