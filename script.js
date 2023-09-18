@@ -274,7 +274,7 @@ for (let i = 0; i < departments.length; i++) {
       employeesNames.push(departments[i][j]);
     }
 }
-employeesNames.sort;
+employeesNames.sort();
 console.log(employeesNames);
     
 // Ex-5 //
