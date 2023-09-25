@@ -108,14 +108,15 @@
       .button-learn {
         background-color: transparent;
       }
-      @media screen and (min-width: 360px) and (max-width:768) {
+      @media screen and (min-width: 360px) and (max-width:768px) {
         body {
           background-position: center;
         }
         .header {
+          display: flex;
           flex-direction: column;
           align-items: center;
-          margin-bottom: 1em;
+          margin-bottom:80px;
           line-height: 3em;
         }
         .header-nav {
@@ -123,15 +124,6 @@
         }
         .nav-icons {
           margin-left: 0;
-        }
-        .top-banner__title {
-          font-size: 1.2em;
-          line-height: 3em;
-          margin-top: 70px;
-        }
-        .top-banner__subtitle {
-          font-size: 0.6em;
-          line-height: 1.5em;
         }
         .action-buttons {
            flex-direction: column;
@@ -144,7 +136,7 @@
           padding: 10px 36px;
         }
         .button-learn {
-          margin-top: 25px;
+          margin-top: 10px;
         }
       }
       .why-us {
@@ -328,7 +320,227 @@
         line-height: 24px;   
         width: 600px;
       }
-      @media screen and (min-width: 360px) and (max-width:768) {
+      .business-service {
+        background: linear-gradient(
+          rgba(37, 43, 66, 1),
+          rgba(22, 105, 122, 1));
+      }
+      .video__play {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .video-button {
+        display: flex;
+        position: absolute;
+        border-radius: 70px;
+        width: 90px;
+        height: 90px;
+        justify-content: center;
+        align-items: center;
+        background-color: #00A0C1;
+        cursor: pointer;
+      }
+      .video__main-content, .clients__main-content, .team__main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 864px;
+        margin-top: 80px;
+      }
+      .video__title, .clients__title, .team__title {
+        width: 461px;       
+        font-weight: 700;
+        line-height: 57px;
+        font-size: 40px;
+        text-align: center;
+        margin: 0 auto;
+      }
+      .video__subtitle, .clients__subtitle, .team__subtitle {
+        width: 470px;       
+        font-weight: 500;
+        line-height: 20px;
+        font-size: 14px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 50px ;
+      }
+      @media screen and (min-width: 360px) and (max-width:768px) {
+        .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 30px 0;
+        }
+        .video__main-content {
+          display: flex;
+          width: 330px;
+          gap: 10px;
+          margin: 0;
+          margin-bottom: 60px;
+        }
+        .video__title {
+          margin: 0;
+          margin-top: 45px;
+          width: 308px;
+        }
+        .video__subtitle {
+          width: 225px;
+          margin: 0;
+        }
+      }
+      .clients {
+        background-color: var(--darkblue);
+      }
+      .clients__subtitle {
+        margin-bottom: 35px;
+      }
+      .card__content {
+        gap: 20px;
+      }
+      .employee-pic {
+        width: 50px;
+        height: 50px;
+        border: 1px;
+        display: flex;
+        float:left;
+        margin-right: 15px;
+      }
+      .employee-name, .employee-occupation {
+        font-weight: 600;
+        line-height: 24px;
+        color: var(--orange);
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        font-size: 14px;
+      }
+      .employee-occupation {
+        color: var(--darkblue);
+      }
+      .employee-review {
+        margin: 20px 0;
+        font-size: 14px;
+        color: #737373;
+        font-weight: 600;
+        line-height: 24px;
+      }
+      .star-rating {
+        width: 22px;
+        height: 22px;
+      }
+      .clients .card {
+        padding: 30px 35px;
+        margin-bottom: 80px;
+        margin-top: 35px;
+        border-radius: 5px;
+        border: 1px;
+      }
+      @media screen and (min-width: 360px) and (max-width:768px) {
+        .clients__main-content {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          margin-top: 45px;
+        }
+        .clients__title {
+          width: 227px;
+        }
+        .clients__subtitle {
+          width: 262px;
+          margin-bottom: 60px;
+        }
+        .clients .cards-grid {
+          margin: 0;
+          gap: 30px;
+        }
+        .clients .card {
+          margin: 0;
+        }
+      }
+      .team {
+        background-color: var(--darkblue);
+      }
+      .team-pic {
+        width: 328px;
+        height: 231px;
+      }
+      .team .card {
+        padding: 0;
+        width: 328px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+      }
+      .team .card__content {
+        padding: 30px;
+        gap: 5px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+      }
+      .team__name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        color: var(--darkblue);
+        margin: 0 auto;
+      }
+      .team__occupation {
+        font-weight: 600;
+        line-height: 24px;
+        color: #737373;
+        font-size: 14px;
+        margin: 0 auto;
+      }
+      .team a {
+        text-decoration: none;
+      }
+      .team__socials{
+        height: 24px;  
+      }
+      .team__social-icons {
+        justify-content: center;
+        display: flex;
+        gap: 15px;
+      }
+      .team .card {
+        margin-bottom: 80px;
+      }
+      .team__pic-MQ {
+        display: none;
+      }
+      @media screen and (min-width: 360px) and (max-width:768px) {
+        .team__main-content {
+          margin: 0;
+        }
+        .team__title {
+          margin-top: 45px;
+          width: 203px;
+        }
+        .team__subtitle {
+          margin: 0;
+          width: 262px;
+        }
+        .cards-grid {
+          grid-template-columns: auto;
+          margin-bottom: 45px;
+        }
+        .team .card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0;
+          gap: 30px;
+        }
+        .team__pic {
+          display: none;
+        }
+        .team__pic-MQ {
+          display: block;
+        }
       }
     </style>
   </head>
@@ -468,7 +680,255 @@
         </div>
       </div>
     </section>
-     <footer class="footer">
+    <section class="business-service">
+      <div class="container">
+        <div class="video__main-content">
+          <h2 class="video__title">We are providing best business service.</h2>
+          <p class="video__subtitle">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+        </div>
+        <div class="video__play">
+          <video class="video__cover" width="877px" height="442px" poster="img-video/video-cover.png" controls>
+            <source src="img-video/CSS in 100 Seconds.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <div class="video-button"><img src="img-video/icon-video-button.svg" alt="The video button"></div>
+        </div>
+      </div>
+    </section>
+    <section class="clients">
+      <div class="container">
+        <div class="clients__main-content">
+          <h2 class="clients__title">What Clients Say</h2>
+          <p class="clients__subtitle">Problems trying to resolve the conflict between 
+            the two major realms of Classical physics: Newtonian mechanics </p>
+        </div>
+        <div class="cards-grid">
+          <div class="card">
+            <div class="card__content">
+              <img
+                src="img-clients/yellow-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+              <img
+                src="img-clients/yellow-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+              <img
+                src="img-clients/yellow-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+              <img
+                src="img-clients/yellow-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+              <img
+                src="img-clients/empty-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+              <h6 class="employee-review">Slate helps you see how many more days you need to work to reach your financial goal.</h6>
+              <img 
+                src="img-clients/Designer-1.png"
+                class="employee-pic"
+                alt="designer image"
+              />
+              <p class="employee-name">Regina Miles</p>
+              <h6 class="employee-occupation">Designer</h6>
+            </div>
+          </div>
+            <div class="card">
+              <div class="card__content">
+                <img
+                src="img-clients/yellow-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+              <img
+                src="img-clients/yellow-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+              <img
+                src="img-clients/yellow-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+              <img
+                src="img-clients/yellow-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+              <img
+                src="img-clients/empty-star.svg"
+                class="star-rating"
+                alt="star rating image"
+              />
+                <h6 class="employee-review">Slate helps you see how many more days you need to work to reach your financial goal.</h6>
+                <img
+                  src="img-clients/Designer-2.png"
+                  class="employee-pic"
+                  alt="designer image"
+                />
+                <p class="employee-name">Regina Miles</p>
+                <h6 class="employee-occupation">Designer</h6>
+              </div>
+            </div>
+              <div class="card">
+                <div class="card__content">
+                  <img
+                  src="img-clients/yellow-star.svg"
+                  class="star-rating"
+                  alt="star rating image"
+                />
+                <img
+                  src="img-clients/yellow-star.svg"
+                  class="star-rating"
+                  alt="star rating image"
+                />
+                <img
+                  src="img-clients/yellow-star.svg"
+                  class="star-rating"
+                  alt="star rating image"
+                />
+                <img
+                  src="img-clients/yellow-star.svg"
+                  class="star-rating"
+                  alt="star rating image"
+                />
+                <img
+                  src="img-clients/empty-star.svg"
+                  class="star-rating"
+                  alt="star rating image"
+                />
+                  <h6 class="employee-review">Slate helps you see how many more days you need to work to reach your financial goal.</h6>
+                  <img 
+                    src="img-clients/Designer-3.png"
+                    class="employee-pic"
+                    alt="designer image"
+                  />
+                  <p class="employee-name">Regina Miles</p>
+                  <h6 class="employee-occupation">Designer</h6>
+                </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <section class="team">
+      <div class="container">
+        <div class="team__main-content">
+          <h2 class="team__title">Meet Our Team</h2>
+          <p class="team__subtitle">Problems trying to resolve the conflict between 
+            the two major realms of Classical physics: Newtonian mechanics</p>
+        </div>
+        <div class="cards-grid">
+          <div class="card">
+            <img
+                src="img-team/team-1.png"
+                class="team__pic"
+                alt="ceo picture"
+              />
+              <img
+              src="img-team/team-1-3-MQ.png"
+              class="team__pic-MQ"
+              alt="ceo picture"
+              />
+            <div class="card__content">
+              <h5 class="team__name">Ashley Fletcher</h5>
+                <h6 class="team__occupation">CEO</h6>
+                <div class="team__social-icons">
+                <a href="#"><img
+                  src="img-team/team-fb.svg"
+                  class="team__socials"
+                  alt="facebook image"/>
+                </a>
+                <a href="#"><img
+                  src="img-team/team-insta.svg"
+                  class="team__socials"
+                  alt="instagram image"/>
+                </a>
+                <a href="#"><img
+                  src="img-team/team-twitter.svg"
+                  class="team__socials"
+                  alt="twitter image"/>
+                </a>
+                </div>
+              </div>
+          </div>  
+          <div class="card">
+              <img
+                src="img-team/team-1.png"
+                class="team__pic"
+                alt="ceo picture"
+              />
+              <img
+              src="img-team/team-2-MQ.png"
+              class="team__pic-MQ"
+              alt="ceo picture"
+              />
+            <div class="card__content">
+              <h5 class="team__name">Rodney Stratton</h5>
+                <h6 class="team__occupation">Consultant</h6>
+                <div class="team__social-icons">
+                <a href="#"><img
+                  src="img-team/team-fb.svg"
+                  class="team__socials"
+                  alt="facebook image"/>
+                </a>
+                <a href="#"><img
+                  src="img-team/team-insta.svg"
+                  class="team__socials"
+                  alt="instagram image"/>
+                </a>
+                <a href="#"><img
+                  src="img-team/team-twitter.svg"
+                  class="team__socials"
+                  alt="twitter image"/>
+                </a>
+                </div>
+              </div>
+          </div>
+          <div class="card">
+            <img
+                src="img-team/team-2.png"
+                class="team__pic"
+                alt="ceo picture"
+              />
+              <img
+              src="img-team/team-1-3-MQ.png"
+              class="team__pic-MQ"
+              alt="ceo picture"
+              />
+            <div class="card__content">
+              <h5 class="team__name">Avie Beaton</h5>
+                <h6 class="team__occupation">Co-Founder</h6>
+                <div class="team__social-icons">
+                <a href="#"><img
+                  src="img-team/team-fb.svg"
+                  class="team__socials"
+                  alt="facebook image"/>
+                </a>
+                <a href="#"><img
+                  src="img-team/team-insta.svg"
+                  class="team__socials"
+                  alt="instagram image"/>
+                </a>
+                <a href="#"><img
+                  src="img-team/team-twitter.svg"
+                  class="team__socials"
+                  alt="twitter image"/>
+                </a>
+                </div>
+              </div>
+            </div>
+         </div> 
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
       <section class="footer__primary">
         <div class="container">
           <div class="footer__content">
