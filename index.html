@@ -134,7 +134,7 @@
         .button-quote {
           font-size: 0.5em;
           line-height: 1.5em;
-          padding: 10px 10px;
+          padding: 10px 36px;
         }
         .button-learn {
           margin-top: 10px;
@@ -465,11 +465,14 @@
       .team .card {
         padding: 0;
         width: 328px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
       }
       .team .card__content {
         padding: 30px;
         gap: 5px;
-        text-align: center;
+        align-items: center;
         display: flex;
         flex-direction: column;
       }
@@ -496,6 +499,7 @@
       }
       .team__social-icons {
         justify-content: center;
+        display: flex;
         gap: 15px;
       }
       .team .card {
@@ -683,9 +687,12 @@
         </div>
         <div class="video">
           <video class="video__web" poster="img-video/video-cover.png" controls>
-            <source src="img-video/CSS-video.mp4" type="video/mp4" />
+            <source src="img-video/CSS in 100 Seconds.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+          <div class="video-button">
+            <img src="img-video/icon-video-button.svg" alt="The video button" />
+          </div>
         </div>
       </div>
     </section>
