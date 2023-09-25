@@ -234,108 +234,247 @@
 
 // Ex-1 //
 
-let fruits = ["apple", "banana", "orange"];
-for (let i = 0; i < fruits.length; i++) {
-    console.log(fruits[i]);
+// let fruits = ["apple", "banana", "orange"];
+// for (let i = 0; i < fruits.length; i++) {
+//     console.log(fruits[i]);
+// }
+
+// // Ex-2 //
+
+// let numbers = [1, 2, 3, 4, 5];
+// let sum = 0;
+// for (let i = 0; i < numbers.length; i++) {
+//     sum += numbers[i];
+// }
+// console.log(sum);
+
+// // Ex-3 // 
+
+// let names = ["John", "Jane", "Mikhael", "Jennifer", "Bobby"];
+// let namesLength = [];
+// for (let i = 0; i < names.length; i++) {
+//     namesLength.push(names[i].length);
+// }
+// console.log(namesLength);
+
+// // Ex-4 // 
+
+// let departments = [
+//   ["Bob", "Steve"],
+//   ["Kate", "Ronny", "Louis"],
+//   ["Jacob", "Mickey", "David", "Polly"],
+//   ["Paula", "Olivia"],
+// ];
+
+// let employeesNames = [];
+
+// for (let i = 0; i < departments.length; i++) {
+//     for (let j = 0; j < departments[i].length; j++) {
+//       console.log(departments[i][j]);
+//       employeesNames.push(departments[i][j]);
+//     }
+// }
+// employeesNames.sort();
+// console.log(employeesNames);
+    
+// // Ex-5 //
+
+// let person = {
+//      firstName: "John",
+//      lastName: "Doe",
+//      age: 30,
+//      profession: "Developer"
+// }
+// let keys = Object.keys(person);
+// console.log(keys.length);
+
+// // Ex-6 // 
+
+// let arrayNumbers = [];
+// let n = 5;
+// for (let i = 1; i <= n; i++) {
+//     arrayNumbers.push(i);
+// }
+// console.log(arrayNumbers);
+
+// // Ex-7 //
+
+// let numbers1 = [10, 25, 13, 144, 74];
+// let theBiggestNumber = numbers1[0];
+// for (let i = 0; i < numbers.length; i++) {
+//     if (numbers1[i] > theBiggestNumber) {
+//         theBiggestNumber = numbers1[i];
+//     }   
+// }
+// console.log(theBiggestNumber);
+
+// // Ex-8 //
+
+// let grades = {
+//     math: 7,
+//     english: 9,
+//     chemistry: 10,
+//     physics: 7
+// }
+// let total = 0;
+
+// for(let subject in grades) {
+//     total += grades[subject];
+// }
+// let avg = total / Object.keys(grades).length;
+// console.log(avg);
+
+// // Ex-9 //
+ 
+// let dog = new Object();
+// dog.name = "Mickey";
+// dog.age = 2;
+// dog.color = "white";
+
+// function addPuppies(dog, numberPuppies) {
+//     dog.puppies = [];
+//     for (let i = 1; i <= numberPuppies; i++){
+//         dog.puppies.push(`Puppy_${i}`);
+//     }
+// }
+// addPuppies(dog,5);
+// console.log(dog);
+
+// HW-6 //
+
+// Ex-1 //
+
+let myObject = {
+    name: "John", 
+    age: 30, 
+    city: "New-York"
 }
+const method = (myObject) => {
+
+let keys = Object.keys(myObject);
+let i = 0;
+while (i < keys.length) {
+  let key = keys[i];
+  console.log(`${key}: ${myObject[key]}`);
+  i++;
+}
+ }
+method(myObject);
 
 // Ex-2 //
 
-let numbers = [1, 2, 3, 4, 5];
-let sum = 0;
-for (let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
-}
-console.log(sum);
+let key = "name";
 
-// Ex-3 // 
-
-let names = ["John", "Jane", "Mikhael", "Jennifer", "Bobby"];
-let namesLength = [];
-for (let i = 0; i < names.length; i++) {
-    namesLength.push(names[i].length);
-}
-console.log(namesLength);
-
-// Ex-4 // 
-
-let departments = [
-  ["Bob", "Steve"],
-  ["Kate", "Ronny", "Louis"],
-  ["Jacob", "Mickey", "David", "Polly"],
-  ["Paula", "Olivia"],
-];
-
-let employeesNames = [];
-
-for (let i = 0; i < departments.length; i++) {
-    for (let j = 0; j < departments[i].length; j++) {
-      console.log(departments[i][j]);
-      employeesNames.push(departments[i][j]);
-    }
-}
-employeesNames.sort();
-console.log(employeesNames);
-    
-// Ex-5 //
-
-let person = {
-     firstName: "John",
-     lastName: "Doe",
-     age: 30,
-     profession: "Developer"
-}
-let keys = Object.keys(person);
-console.log(keys.length);
-
-// Ex-6 // 
-
-let arrayNumbers = [];
-let n = 5;
-for (let i = 1; i <= n; i++) {
-    arrayNumbers.push(i);
-}
-console.log(arrayNumbers);
-
-// Ex-7 //
-
-let numbers1 = [10, 25, 13, 144, 74];
-let theBiggestNumber = numbers1[0];
-for (let i = 0; i < numbers.length; i++) {
-    if (numbers1[i] > theBiggestNumber) {
-        theBiggestNumber = numbers1[i];
+const findKey = (myObject, key) => {
+for (let k in myObject) {
+    if (k == key) {
+        return true;
     }   
 }
-console.log(theBiggestNumber);
-
-// Ex-8 //
-
-let grades = {
-    math: 7,
-    english: 9,
-    chemistry: 10,
-    physics: 7
+    return false;
 }
-let total = 0;
+console.log(findKey(myObject,key));
 
-for(let subject in grades) {
-    total += grades[subject];
-}
-let avg = total / Object.keys(grades).length;
-console.log(avg);
+// Ex-3 //
 
-// Ex-9 //
- 
-let dog = new Object();
-dog.name = "Mickey";
-dog.age = 2;
-dog.color = "white";
+let initialObject = { prop1: "Hello", prop2: "World", prop3: "!" };
 
-function addPuppies(dog, numberPuppies) {
-    dog.puppies = [];
-    for (let i = 1; i <= numberPuppies; i++){
-        dog.puppies.push(`Puppy_${i}`);
+function concatenateWords(obj) {
+    let objKeys = Object.keys(obj);
+    let result = ''; 
+    let i = 0;
+    do {
+      let currentKey = objKeys[i];
+      let currentValue = initialObject[currentKey];
+      result += currentValue;
+      i++;
+    } while (i < objKeys.length); 
+
+    return result;
+} 
+console.log(concatenateWords(initialObject));
+
+// Ex-4 //
+
+const getAmount = (str) => {
+    let lowerStr = str.toLowerCase();
+    let vowels = ["a", "e", "i", "o", "u", "y"];
+    let i = 0;
+    let vowelsAmount = 0;
+
+    while (i<str.length) {
+        if (vowels.indexOf(lowerStr[i]) !== -1) {
+            vowelsAmount++;
+        }
+        i++;
     }
+    return vowelsAmount;
 }
-addPuppies(dog,5);
-console.log(dog);
+console.log(getAmount("Hello world, my name is Albert"));
+
+// Ex-5 //
+
+let input = { 
+    John: [8, 7, 9],
+    Mary: [9, 9, 10],
+    Alex: [6, 8, 7],
+}
+
+const getMedium = (initialObj) => {
+    let resultObject = Object.assign({}, initialObj);
+
+    for (element in initialObj) {
+        let value = initialObj[element];
+        i = 0;
+        let sum = 0;
+        let medium = 0;
+        let arrayLength = value.length;
+
+        while (i < arrayLength) {
+            sum += value[i];
+            i++;
+        }
+        medium = sum / arrayLength;
+        resultObject[element] = `medium: ${medium}`;
+    }
+    return resultObject;
+}
+
+console.log(getMedium(input));
+
+// Ex-6 //
+
+const reversedWords = (initialString) => {
+    const initialStringArray = initialString.split('');
+
+    const resultStringArray = [];
+    let i = initialStringArray.length - 1;
+    do {
+        resultStringArray.push(initialStringArray[i]);
+        i--;
+    } while (i >=0);
+
+    let resultString = resultStringArray.join('');
+    return resultString;
+}
+
+let initialString = 'Hello, world!';
+console.log(reversedWords(initialString));
+// Ex-7 //
+
+let word = "level";
+
+const polidrom = (word) => {
+    let left = 0;
+    let right = word.lenth - 1;
+
+    while (left < right) {
+        if (word[left] !== word[right]) {
+            return false;
+        }
+        left++;
+        right--;
+    }
+    return true;
+}
+console.log(polidrom(word));
