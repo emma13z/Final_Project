@@ -138,4 +138,3 @@ const polidrom = (word) => {
 }
 console.log(polidrom(word));
  
-//
