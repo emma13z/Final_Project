@@ -9,7 +9,8 @@ let student = {
     year: 3
 };
 
-let studentInfo = ({firstName, lastName, fullName = `${firstName} ${lastName}`, faculty, year}) => {
+let studentInfo = ({firstName, lastName, faculty, year}) => {
+    let fullName = `${firstName} ${lastName}`
 console.log([fullName, faculty, year]);
 };
 
@@ -54,13 +55,3 @@ let newStudent = {
 const updatedStudent = {...newStudent, language: "en"};
 console.log(updatedStudent);
 
-// Ex-6 //
-
-// function stringReplace() {
-//     let string = "din";
-//     let newString = string.replace(/din/gi,"(");
-//     return newString;
-// }
-
-// let replaced = stringReplace();
-// console.log(replaced);
