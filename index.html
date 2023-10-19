@@ -959,6 +959,66 @@
         </div>
       </div>
     </section>
+    <section class="contact-us">
+      <div class="container">
+        <div class="contact__main-content">
+          <h5 class="contact__title">Contact Us</h5>
+          <h2 class="contact__subtitle">Make an Appointment</h2>
+        </div>
+        <form class="form-appointment">
+          <input
+            type="text"
+            class="form-data"
+            name="fullname"
+            placeholder="Full Name"
+            required
+          />
+          <input
+            type="email"
+            class="email"
+            name="email"
+            placeholder="example@gmail.com"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+            required
+          />
+          <select class="form-select" name="date">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+          </select>
+          <select class="form-select" name="time">
+            <option value="4pm">4:00 Available</option>
+            <option value="11am">11am</option>
+            <option value="12pm">12pm</option>
+            <option value="2pm">2pm</option>
+            <option value="3pm">3pm</option>
+          </select>
+          <textarea
+            class="form-message"
+            name="message"
+            rows="5"
+            cols="15"
+            placeholder="Message"
+          ></textarea>
+          <input class="form-button" type="submit" value="Book Appointment" />
+        </form>
+      </div>
+    </section>
+    <section class="form-footer">
+      <div class="container">
+        <div class="contact-footer__main-content">
+          <h3 class="contact-footer__sec-title">
+            Consulting Agency For Your Business
+          </h3>
+          <p class="contact-footer__sec-subtitle">
+            the quick fox jumps over the lazy dog
+          </p>
+        </div>
+        <input class="form-footer-button" type="submit" value="Contct Us" />
+      </div>
+    </section>
     <footer class="footer">
       <section class="footer__primary">
         <div class="container">
