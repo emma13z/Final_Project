@@ -538,6 +538,126 @@
           display: block;
         }
       }
+      .contact-us {
+        background-image: url(img-contact/contact-background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        padding: 50px 0px;
+      }
+      .container__contact {
+        display: flex;
+        padding: 40px 0px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .contact__title {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        margin: 0;
+      }
+      .contact__subtitle {
+        font-size: 40px;
+        line-height: 57px;
+        letter-spacing: 0.2px;
+        margin: 0;
+      }
+      .form__data,
+      .form__email {
+        display: flex;
+        width: 285px;
+        padding: 11px 188px 15px 21px;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 5px;
+        border: 1px solid #bdbdbd;
+        background: #f9f9f9;
+      }
+      .form__email {
+        margin-left: 20px;
+      }
+      .form__select-date,
+      .form__select-time {
+        display: flex;
+        padding: 11px 20px 15px 18px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        border: 1px solid #bdbdbd;
+        background: #f9f9f9;
+        color: #bdbdbd;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+      }
+      .form__select-time {
+        margin-left: 20px;
+      }
+      .form__message {
+        display: flex;
+        padding: 16px 507px 100px 26px;
+        border: 1px solid #bdbdbd;
+        background: #f9f9f9;
+        color: #bdbdbd;
+        color: var(--muted-color, #bdbdbd);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+      }
+      .form__appointment {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        width: 100%;
+        border-radius: 10px;
+        margin: 40px 0;
+      }
+      .contact__footer {
+        display: flex;
+        gap: 360px;
+        align-items: center;
+      }
+      .contact-footer__main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+      .contact-footer__sec-title {
+        margin: 0;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+        color: var(--darkblue);
+      }
+      .contact-footer__sec-subtitle {
+        margin: 0;
+        color: var(--grey);
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+      }
+      .form-footer__button,
+      .form__button {
+        padding: 15px 40px;
+        border-radius: 5px;
+        background: var(--orange);
+        border: none;
+        cursor: pointer;
+        color: #ffffff;
+      }
+      .form__button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
     </style>
   </head>
   <body>
@@ -961,62 +1081,71 @@
     </section>
     <section class="contact-us">
       <div class="container">
-        <div class="contact__main-content">
-          <h5 class="contact__title">Contact Us</h5>
-          <h2 class="contact__subtitle">Make an Appointment</h2>
+        <div class="container__contact">
+          <div class="contact__main-content">
+            <h5 class="contact__title">Contact Us</h5>
+            <h2 class="contact__subtitle">Make an Appointment</h2>
+          </div>
+          <form class="form__appointment">
+            <input
+              type="text"
+              class="form__data"
+              name="fullname"
+              placeholder="Full Name"
+              required
+            />
+            <input
+              type="email"
+              class="form__email"
+              name="email"
+              placeholder="example@gmail.com"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+              required
+            />
+            <select class="form__select-date" name="date">
+              <option value="Monday">Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday">Friday</option>
+            </select>
+            <select class="form__select-time" name="time">
+              <option value="4pm">4:00 Available</option>
+              <option value="11am">11am</option>
+              <option value="12pm">12pm</option>
+              <option value="2pm">2pm</option>
+              <option value="3pm">3pm</option>
+            </select>
+            <textarea
+              class="form__message"
+              name="message"
+              rows="5"
+              cols="10"
+              placeholder="Message"
+            >
+            </textarea>
+            <input
+              class="form__button"
+              type="submit"
+              value="Book Appointment"
+            />
+          </form>
         </div>
-        <form class="form-appointment">
-          <input
-            type="text"
-            class="form-data"
-            name="fullname"
-            placeholder="Full Name"
-            required
-          />
-          <input
-            type="email"
-            class="email"
-            name="email"
-            placeholder="example@gmail.com"
-            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-            required
-          />
-          <select class="form-select" name="date">
-            <option value="Monday">Monday</option>
-            <option value="Tuesday">Tuesday</option>
-            <option value="Wednesday">Wednesday</option>
-            <option value="Thursday">Thursday</option>
-            <option value="Friday">Friday</option>
-          </select>
-          <select class="form-select" name="time">
-            <option value="4pm">4:00 Available</option>
-            <option value="11am">11am</option>
-            <option value="12pm">12pm</option>
-            <option value="2pm">2pm</option>
-            <option value="3pm">3pm</option>
-          </select>
-          <textarea
-            class="form-message"
-            name="message"
-            rows="5"
-            cols="15"
-            placeholder="Message"
-          ></textarea>
-          <input class="form-button" type="submit" value="Book Appointment" />
-        </form>
       </div>
     </section>
-    <section class="form-footer">
+    <section class="form__footer">
       <div class="container">
-        <div class="contact-footer__main-content">
-          <h3 class="contact-footer__sec-title">
-            Consulting Agency For Your Business
-          </h3>
-          <p class="contact-footer__sec-subtitle">
-            the quick fox jumps over the lazy dog
-          </p>
+        <div class="contact__footer">
+          <div class="contact-footer__main-content">
+            <h3 class="contact-footer__sec-title">
+              Consulting Agency For Your Business
+            </h3>
+            <p class="contact-footer__sec-subtitle">
+              the quick fox jumps over the lazy dog
+            </p>
+          </div>
+          <input class="form-footer__button" type="submit" value="Contact Us" />
         </div>
-        <input class="form-footer-button" type="submit" value="Contct Us" />
       </div>
     </section>
     <footer class="footer">
