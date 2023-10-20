@@ -1,20 +1,20 @@
 // Async/await method //
 
-// const getData = async () => {
-//     let response = await fetch ('https://jsonplaceholder.typicode.com/users/3');
-//     let user = await response.json();
-//     console.log(user);
+const getData = async () => {
+    let response = await fetch ('https://jsonplaceholder.typicode.com/users/3');
+    let user = await response.json();
+    console.log(user);
 
-//     let postsResponse = await fetch (`https://jsonplaceholder.typicode.com/posts?userId=${user.id}`);
-//     let posts = await postsResponse.json();
-//     console.log(posts);
+    let postsResponse = await fetch (`https://jsonplaceholder.typicode.com/posts?userId=${user.id}`);
+    let posts = await postsResponse.json();
+    console.log(posts);
 
-//     let postsComments = await fetch ('https://jsonplaceholder.typicode.com/posts/1/comments');
-//     let comments = await postsComments.json();
-//     console.log(comments);
-// };
+    let postsComments = await fetch ('https://jsonplaceholder.typicode.com/posts/1/comments');
+    let comments = await postsComments.json();
+    console.log(comments);
+};
 
-// getData();
+getData();
 
 // Promises method //
 
