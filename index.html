@@ -14,6 +14,7 @@
         --darkblue: #252b42;
         --orange: #ffa62b;
         --grey: #737373;
+        --light-grey: #bdbdbd;
       }
       body {
         position: relative;
@@ -548,9 +549,12 @@
       }
       .container__contact {
         display: flex;
-        padding: 40px 0px;
+        justify-content: left;
         flex-direction: column;
         align-items: flex-start;
+        margin: 0 auto;
+        padding: 40px 0px;
+        margin: 0 auto;
       }
       .contact__title {
         font-size: 16px;
@@ -564,57 +568,58 @@
         letter-spacing: 0.2px;
         margin: 0;
       }
+      .form__appointment {
+        display: grid;
+        justify-content: start;
+        grid-gap: 20px;
+        margin-top: 40px;
+        grid-template-columns: auto auto;
+        grid-template-rows: 50px 50px 140px 60px;
+      }
       .form__data,
       .form__email {
-        display: flex;
-        width: 285px;
-        padding: 11px 188px 15px 21px;
-        align-items: center;
-        flex-shrink: 0;
+        padding: 10px 190px 15px 20px;
         border-radius: 5px;
         border: 1px solid #bdbdbd;
         background: #f9f9f9;
-      }
-      .form__email {
-        margin-left: 20px;
       }
       .form__select-date,
       .form__select-time {
-        display: flex;
-        padding: 11px 20px 15px 18px;
-        flex-shrink: 0;
+        padding: 10px 20px 15px 20px;
         border-radius: 5px;
         border: 1px solid #bdbdbd;
         background: #f9f9f9;
-        color: #bdbdbd;
+        color: var(--light-grey);
         font-size: 14px;
         font-weight: 600;
         line-height: 24px;
         letter-spacing: 0.2px;
       }
-      .form__select-time {
-        margin-left: 20px;
-      }
       .form__message {
-        display: flex;
-        padding: 16px 507px 100px 26px;
         border: 1px solid #bdbdbd;
+        padding: 15px 500px 100px 25px;
+        border-radius: 5px;
         background: #f9f9f9;
-        color: #bdbdbd;
-        color: var(--muted-color, #bdbdbd);
+        color: var(--light-grey);
         font-size: 14px;
         font-style: normal;
         font-weight: 600;
         line-height: 24px;
         letter-spacing: 0.2px;
+        grid-column-start: 1;
+        grid-column-end: 3;
       }
-      .form__appointment {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, auto);
-        width: 100%;
-        border-radius: 10px;
-        margin: 40px 0;
+      .form__button {
+        width: 220px;
+      }
+      .form-footer__button,
+      .form__button {
+        border-radius: 5px;
+        padding: 15px 40px;
+        background: var(--orange);
+        border: none;
+        cursor: pointer;
+        color: #ffffff;
       }
       .contact__footer {
         display: flex;
@@ -642,21 +647,6 @@
         font-size: 14px;
         line-height: 20px;
         letter-spacing: 0.2px;
-      }
-      .form-footer__button,
-      .form__button {
-        padding: 15px 40px;
-        border-radius: 5px;
-        background: var(--orange);
-        border: none;
-        cursor: pointer;
-        color: #ffffff;
-      }
-      .form__button {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
       }
     </style>
   </head>
