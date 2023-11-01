@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css?family=Montserrat"
       rel="stylesheet"
     />
+    <script src="index.js"></script>
     <script src="script.js"></script>
     <style>
       :root {
@@ -1076,31 +1077,33 @@
             <h5 class="contact__title">Contact Us</h5>
             <h2 class="contact__subtitle">Make an Appointment</h2>
           </div>
-          <form class="form__appointment">
+          <form class="form__appointment" id="form">
             <input
               type="text"
               class="form__data"
               name="fullname"
               placeholder="Full Name"
+              id="inputName"
               required
             />
             <input
               type="email"
+              id="inputEmail"
               class="form__email"
               name="email"
               placeholder="example@gmail.com"
               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
               required
             />
-            <select class="form__select-date" name="date">
+            <select class="form__select-date" id="inputDate" name="date">
               <option value="Monday">Monday</option>
               <option value="Tuesday">Tuesday</option>
               <option value="Wednesday">Wednesday</option>
               <option value="Thursday">Thursday</option>
               <option value="Friday">Friday</option>
             </select>
-            <select class="form__select-time" name="time">
-              <option value="4pm">4:00 Available</option>
+            <select class="form__select-time" id="inputTime" name="time">
+              <option value="4pm">4pm</option>
               <option value="11am">11am</option>
               <option value="12pm">12pm</option>
               <option value="2pm">2pm</option>
@@ -1108,6 +1111,7 @@
             </select>
             <textarea
               class="form__message"
+              id="inputMessage"
               name="message"
               rows="5"
               cols="10"
