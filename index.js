@@ -1,15 +1,11 @@
 document.addEventListener (`DOMContentLoaded`, function () {
 const form = document.getElementById('form');
 const inputName = document.getElementById('inputName');
-const outputName = document.getElementById('outputName');
 const inputEmail = document.getElementById('inputEmail');
-const outputEmail = document.getElementById('outputEmail');
 const inputDate= document.getElementById('inputDate');
-const outputDate = document.getElementById('outputDate');
 const inputTime= document.getElementById('inputTime');
-const outputTime = document.getElementById('outputTime');
 const inputMessage = document.getElementById('inputMessage');
-const outputMessage = document.getElementById('outputMessage');
+
 
 form.addEventListener('submit', handleSubmit);
 
